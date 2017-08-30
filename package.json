@@ -33,6 +33,6 @@
     "ndjson": "^1.5.0"
   },
   "scripts": {
-    "test:travis": "npm install LinusU/node-canvas#pangocairo-test && mocha test"
+    "test:travis": "mocha test"
   }
 }
