@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const zlib = require('zlib');
 const https = require('https');
 const ndjson = require('ndjson');
 const JSONStream = require('JSONStream');
@@ -89,11 +90,13 @@ const quickDraw = {
       console.warn(`Requested ${amount} images from '${category}', only ${drawings.length} available!`);
     }
 
-    var fileName = category + '.json';
+    var fileName = category + '.json.gz';
     var transformStream = JSONStream.stringify('{ "data": [', ',', ']}');
     var outputStream = fs.createWriteStream(path.join(__dirname, '/drawings/', fileName));
 
-    transformStream.pipe(outputStream);
+    var gzip = zlib.createGzip();
+
+    transformStream.pipe(gzip).pipe(outputStream);
 
     drawings.forEach(function (d) {
       let { context } = quickDraw._strokeToCanvas(d.drawing, size);
@@ -122,8 +125,8 @@ const quickDraw = {
   /** Returns a useable dataset for Neataptic and Synaptic */
   set: function (amount, categories = quickDraw.categories) {
     var dataSet = [];
-    var chunkSize = Math.floor(amount / categories.length);
 
+    var chunkSize = Math.floor(amount / categories.length);
     var rest = Math.round((amount / categories.length - chunkSize) * categories.length);
 
     var inputSize;
@@ -133,7 +136,9 @@ const quickDraw = {
 
       let data;
       try {
-        data = require(`./drawings/${category}.json`).data;
+        let gzip = fs.readFileSync(path.join(__dirname, `./drawings/${category}.json.gz`));
+        let unzipped = zlib.unzipSync(new Buffer(gzip, 'base64'));
+        data = JSON.parse(unzipped).data;
       } catch (err) {
         throw new Error(`Missing category: '${category}'. Please import!`);
       }
