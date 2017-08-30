@@ -33,6 +33,6 @@
     "ndjson": "^1.5.0"
   },
   "scripts": {
-    "test:travis": "mocha test"
+    "test": "mocha test"
   }
 }
