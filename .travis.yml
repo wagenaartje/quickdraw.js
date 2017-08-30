@@ -1,4 +1,7 @@
  language: node_js
  script: "npm run test:travis"
+ install:
+   - sudo yum install cairo cairo-devel cairomm-devel libjpeg-turbo-devel pango pango-devel pangomm pangomm-devel giflib-devel
+   - npm install
  node_js:
     - "node"
