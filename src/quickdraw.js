@@ -10,6 +10,9 @@ const { createCanvas } = require('canvas');
 *******************************************************************************/
 
 const quickDraw = {
+  /** List of categories **/
+  categories: require('./categories'),
+
   /** Converts the strokes of a drawing to an actual canvas */
   _strokeToCanvas: function (data, size) {
     var canvas = createCanvas(size, size);
@@ -100,27 +103,28 @@ const quickDraw = {
 
     transformStream.end();
 
-    outputStream.on('finish', function handleFinish () {
-      console.log(category, ' - Processing done! # of drawings:', drawings.length);
+    return new Promise((resolve, reject) => {
+      outputStream.on('finish', function handleFinish () {
+        console.log(category, ' - Processing done! # of drawings:', drawings.length);
+        resolve();
+      });
     });
   },
 
   /** Imports the datasets of all categories */
   importAll: async function (amount, size) {
-    var categories = require('./categories');
-
-    for (var i = 0; i < categories.length; i++) {
+    for (var i = 0; i < quickDraw.categories.length; i++) {
       let category = categories[i];
       await quickDraw.import(category, amount, size);
     }
   },
 
   /** Returns a useable dataset for Neataptic and Synaptic */
-  set: function (amount, categories = require('./categories')) {
+  set: function (amount, categories = quickDraw.categories) {
     var dataSet = [];
     var chunkSize = Math.floor(amount / categories.length);
 
-    var rest = (amount / categories.length - chunkSize) * categories.length;
+    var rest = Math.round((amount / categories.length - chunkSize) * categories.length);
 
     var inputSize;
 
