@@ -1,0 +1,33 @@
+{
+  "name": "quickdraw.js",
+  "version": "1.0.0",
+  "description": "The Google Quick Draw dataset ported to a MNIST-like 28x28 greyscale image dataset, useable by JavaScript machine-learning libraries",
+  "main": "./src/quickdraw",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wagenaartje/quickdraw.js"
+  },
+  "keywords": [
+    "quickdraw",
+    "dataset",
+    "machine learning",
+    "google"
+  ],
+  "author": {
+    "name": "Thomas Wagenaar",
+    "email": "wagenaartje@protonmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wagenaartje/quickdraw.js/issues",
+    "email": "wagenaartje@protonmail.com"
+  },
+  "engines": {
+    "node": ">=7.6"
+  },
+  "dependencies": {
+    "JSONStream": "^1.3.1",
+    "canvas": "^2.0.0-alpha.3",
+    "ndjson": "^1.5.0"
+  }
+}
