@@ -65,15 +65,14 @@ Default usage:
 quickDraw.set(size, categories)
 ```
 
-Where `size` is the total amount of samples you want in your dataset. The amount
+* `size` is the total amount of samples you want in your dataset. The amount
 of samples will be distributed among the categories the best way possible.
-
-The `categories` parameter is optional. If none is given, samples of each
+* `categories` is optional. If none is given, samples of each
 category will be present. When given, it should be an array containing the
 names of the categories you want to include.
-[See the full list here](https://github.com/googlecreativelab/quickdraw-dataset/blob/master/categories.txt).
+[See the full list here](https://github.com/googlecreativelab/quickdraw-dataset/blob/master/categories.txt). All given categories should have the same sample dimensions!
 
-All given categories should have the same sample dimensions!
+
 
 Example:
 
@@ -90,7 +89,6 @@ The set function returns an object which is built up like this:
 {
   set: [
     { input: [0, 0, 0, 0.418, 0...], output: [1, 0, 0]},
-    { input: [0, 0, 0, 0, 0, 0, 0...], output: [0, 1, 1]},
     { input: [0.156, 0, 0, 0.163, // one object for every sample
   ],
   output: 3, // amount of categories
