@@ -2,6 +2,8 @@
 
 ### Quick, draw! JS
 
+<a href="https://www.npmjs.com/package/quickdraw.js"><img src="https://img.shields.io/npm/v/quickdraw.js.svg?style=flat-square"></a>
+
 <hr>
 
 This library allows you to import any of the millions of drawings from the
