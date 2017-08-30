@@ -1,5 +1,8 @@
 const quickDraw = require('../src/quickdraw');
 const assert = require('chai').assert;
+const zlib = require('zlib');
+const path = require('path');
+const fs = require('fs');
 
 /*******************************************************************************
                                     TEST
@@ -13,11 +16,16 @@ describe('quickdraw.js tests', function () {
     var category = quickDraw.categories[index];
 
     var amount = Math.round(Math.random() * 1000) + 1;
-    var size = Math.round(Math.random() * 1000);
+    var size = Math.round(Math.random() * 128);
 
     await quickDraw.import(category, amount, size);
 
-    var result = require(`../src/drawings/${category}.json`).data;
+    var gzip = fs.readFileSync(path.join(__dirname, `../src/drawings/${category}.ndjson.gz`));
+    var unzipped = zlib.unzipSync(new Buffer(gzip, 'base64')).toString();
+
+    var data = unzipped.split('\r\n');
+    data.pop();
+    var result = data.map(x => JSON.parse(x));
 
     assert.equal(result.length, amount, 'dataset is not the given size!');
     assert.equal(result[0].length, size ** 2, 'dimensions not correct!');

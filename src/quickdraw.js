@@ -3,7 +3,6 @@ const path = require('path');
 const zlib = require('zlib');
 const https = require('https');
 const ndjson = require('ndjson');
-const JSONStream = require('JSONStream');
 const { createCanvas } = require('canvas');
 
 /*******************************************************************************
@@ -90,8 +89,8 @@ const quickDraw = {
       console.warn(`Requested ${amount} images from '${category}', only ${drawings.length} available!`);
     }
 
-    var fileName = category + '.json.gz';
-    var transformStream = JSONStream.stringify('{ "data": [', ',', ']}');
+    var fileName = category + '.ndjson.gz';
+    var transformStream = ndjson.serialize();
     var outputStream = fs.createWriteStream(path.join(__dirname, '/drawings/', fileName));
 
     var gzip = zlib.createGzip();
@@ -136,9 +135,12 @@ const quickDraw = {
 
       let data;
       try {
-        let gzip = fs.readFileSync(path.join(__dirname, `./drawings/${category}.json.gz`));
-        let unzipped = zlib.unzipSync(new Buffer(gzip, 'base64'));
-        data = JSON.parse(unzipped).data;
+        let gzip = fs.readFileSync(path.join(__dirname, `./drawings/${category}.ndjson.gz`));
+        let unzipped = zlib.unzipSync(new Buffer(gzip, 'base64')).toString();
+
+        data = unzipped.split('\r\n');
+        data.pop();
+        data = data.map(x => JSON.parse(x));
       } catch (err) {
         throw new Error(`Missing category: '${category}'. Please import!`);
       }
