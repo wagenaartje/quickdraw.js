@@ -1,4 +1,4 @@
-![](http://i.imgur.com/5AAzwr4.png)
+![](http://i.imgur.com/ap9FKr7.png)
 
 ### Quick, Draw! JS
 
