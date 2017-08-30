@@ -3,7 +3,6 @@
 ### Quick, draw! JS
 
 <a href="https://www.npmjs.com/package/quickdraw.js"><img src="https://img.shields.io/npm/v/quickdraw.js.svg?style=flat-square"></a>
-<a href="https://travis-ci.org/wagenaartje/quickdraw.js"><img src="https://img.shields.io/travis/wagenaartje/quickdraw.js/master.svg?style=flat-square"></a>
 
 <hr>
 
