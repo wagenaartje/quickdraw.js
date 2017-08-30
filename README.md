@@ -1,6 +1,6 @@
-![](https://quickdraw.withgoogle.com/static/shareimg.png)
+![](http://i.imgur.com/5AAzwr4.png)
 
-### quickdraw.js
+### Quick, Draw! JS
 
 <hr>
 
