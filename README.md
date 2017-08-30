@@ -1,6 +1,6 @@
 ![](http://i.imgur.com/ap9FKr7.png)
 
-### Quick, Draw! JS
+### Quick, draw! JS
 
 <hr>
 
