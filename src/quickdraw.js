@@ -114,7 +114,7 @@ const quickDraw = {
   /** Imports the datasets of all categories */
   importAll: async function (amount, size) {
     for (var i = 0; i < quickDraw.categories.length; i++) {
-      let category = categories[i];
+      let category = quickDraw.categories[i];
       await quickDraw.import(category, amount, size);
     }
   },
