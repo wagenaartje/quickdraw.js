@@ -21,7 +21,7 @@ describe('quickdraw.js tests', function () {
     await quickDraw.import(category, amount, size);
 
     var gzip = fs.readFileSync(path.join(__dirname, `../src/drawings/${category}.ndjson.gz`));
-    var unzipped = zlib.unzipSync(new Buffer(gzip, 'base64')).toString();
+    var unzipped = zlib.unzipSync(Buffer.from(gzip)).toString();
 
     var data = unzipped.split('\r\n');
     data.pop();

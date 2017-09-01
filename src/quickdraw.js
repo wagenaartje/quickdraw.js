@@ -205,7 +205,7 @@ const quickDraw = {
       let data;
       try {
         let gzip = fs.readFileSync(path.join(__dirname, `./drawings/${category}.ndjson.gz`));
-        let unzipped = zlib.unzipSync(new Buffer(gzip, 'base64')).toString();
+        let unzipped = zlib.unzipSync(Buffer.from(gzip)).toString();
 
         data = unzipped.split('\r\n');
         data.pop();
