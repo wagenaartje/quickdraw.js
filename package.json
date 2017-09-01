@@ -1,6 +1,6 @@
 {
   "name": "quickdraw.js",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "The Google Quick Draw dataset ported to a MNIST-like 28x28 greyscale image dataset, useable by JavaScript machine-learning libraries",
   "main": "./src/quickdraw",
   "repository": {
@@ -26,12 +26,12 @@
     "node": ">=7.6"
   },
   "dependencies": {
-    "chai": "^4.1.1",
-    "mocha": "^3.5.0",
     "ndjson": "^1.5.0"
   },
   "devDependencies": {
-    "semistandard": "^11.0.0"
+    "semistandard": "^11.0.0",
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0"
   },
   "scripts": {
     "test": "mocha test"
