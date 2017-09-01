@@ -1,6 +1,6 @@
 {
   "name": "quickdraw.js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The Google Quick Draw dataset ported to a MNIST-like 28x28 greyscale image dataset, useable by JavaScript machine-learning libraries",
   "main": "./src/quickdraw",
   "repository": {
