@@ -3,46 +3,114 @@ const path = require('path');
 const zlib = require('zlib');
 const https = require('https');
 const ndjson = require('ndjson');
-const { createCanvas } = require('canvas');
 
 /*******************************************************************************
                                   QUICKDRAW
 *******************************************************************************/
 
 const quickDraw = {
-  /** List of categories **/
+  /** List of categories */
   categories: require('./categories'),
 
-  /** Converts the strokes of a drawing to an actual canvas */
-  _strokeToCanvas: function (data, size) {
-    var canvas = createCanvas(size, size);
+  /** Plots a line on dots, adapted from https://goo.gl/kRNrMR */
+  _plot: function (x0, y0, x1, y1) {
+    if (x0 === x1 && y0 === y1) {
+      return [];
+    }
 
-    var ctx = canvas.getContext('2d');
+    var fraction = function (x) {
+      return x - Math.floor(x);
+    };
 
-    for (var i = 0; i < data.length; i++) {
-      var stroke = data[i];
-      ctx.moveTo(stroke[0][0] * size / 256, stroke[1][0] * size / 256);
-      for (var j = 0; j < stroke[0].length; j++) {
-        ctx.lineTo(stroke[0][j] * size / 256, stroke[1][j] * size / 256);
+    var dots = [];
+    var steep = Math.abs(y1 - y0) > Math.abs(x1 - x0);
+
+    if (steep) {
+      [y0, x0] = [x0, y0];
+      [y1, x1] = [x1, y1];
+    }
+
+    if (x0 > x1) {
+      [x1, x0] = [x0, x1];
+      [y1, y0] = [y0, y1];
+    }
+
+    var dx = x1 - x0;
+    var dy = y1 - y0;
+    var gradient = dy / dx;
+
+    var xEnd = Math.round(x0);
+    var yEnd = y0 + gradient * (xEnd - x0);
+    var xGap = 1 - fraction(x0 + 0.5);
+    var xPx1 = xEnd;
+    var yPx1 = Math.floor(Math.abs(yEnd));
+
+    if (steep) {
+      dots.push({ x: yPx1, y: xPx1, b: 1 - fraction(yEnd) * xGap });
+      dots.push({ x: yPx1 + 1, y: xPx1, b: fraction(yEnd) * xGap });
+    } else {
+      dots.push({ x: xPx1, y: yPx1, b: 1 - fraction(yEnd) * xGap });
+      dots.push({ x: xPx1, y: yPx1 + 1, b: fraction(yEnd) * xGap });
+    }
+
+    var intery = yEnd + gradient;
+
+    xEnd = Math.round(x1);
+    yEnd = y1 + gradient * (xEnd - x1);
+    xGap = fraction(x1 + 0.5);
+
+    var xPx2 = xEnd;
+    var yPx2 = Math.floor(Math.abs(yEnd));
+
+    if (steep) {
+      dots.push({ x: yPx2, y: xPx2, b: 1 - fraction(yEnd) * xGap });
+      dots.push({ x: yPx2 + 1, y: xPx2, b: fraction(yEnd) * xGap });
+    } else {
+      dots.push({ x: xPx2, y: yPx2, b: 1 - fraction(yEnd) * xGap });
+      dots.push({ x: xPx2, y: yPx2 + 1, b: fraction(yEnd) * xGap });
+    }
+
+    if (steep) {
+      for (let x = xPx1 + 1; x <= xPx2 - 1; x++) {
+        dots.push({ x: Math.floor(Math.abs(intery)), y: x, b: 1 - fraction(intery) });
+        dots.push({ x: Math.floor(Math.abs(intery)) + 1, y: x, b: fraction(intery) });
+        intery = intery + gradient;
+      }
+    } else {
+      for (let x = xPx1 + 1; x <= xPx2 - 1; x++) {
+        dots.push({ x: x, y: Math.floor(Math.abs(intery)), b: 1 - fraction(intery) });
+        dots.push({ x: x, y: Math.floor(Math.abs(intery)) + 1, b: fraction(intery) });
+        intery = intery + gradient;
       }
     }
 
-    ctx.stroke();
-
-    return { canvas: canvas, context: ctx };
+    return dots;
   },
 
-  /** Converts a canvas to a greyscale size x size array */
-  _contextToArray: function (context, size) {
-    var pixelData = context.getImageData(0, 0, size, size).data;
+  /** Converts the strokes of a drawing to an array */
+  _strokeToArray: function (data, size) {
+    var bitmap = new Array(size * size).fill(0);
 
-    var result = [];
-    for (var i = 3; i < pixelData.length; i += 4) {
-      let greyScale = Math.round(pixelData[i] / 256 * 1000) / 1000;
-      result.push(greyScale);
+    for (let i = 0; i < data.length; i++) {
+      let stroke = data[i];
+      for (var j = 1; j < stroke[0].length; j++) {
+        let dots = quickDraw._plot(stroke[0][j - 1] * size / 256, stroke[1][j - 1] * size / 256, stroke[0][j] * size / 256, stroke[1][j] * size / 256);
+        for (var k = 0; k < dots.length; k++) {
+          let dot = dots[k];
+          bitmap[dot.y * size + dot.x] += dot.b;
+        }
+      }
     }
 
-    return result;
+    for (let i = 0; i < bitmap.length; i++) {
+      if (bitmap[i] > 1) {
+        bitmap[i] = 1;
+      } else {
+        bitmap[i] = Math.round(bitmap[i] * 1000) / 1000;
+      }
+    }
+
+    return bitmap;
   },
 
   /** Downloads the given amount of drawings from the given category */
@@ -98,8 +166,7 @@ const quickDraw = {
     transformStream.pipe(gzip).pipe(outputStream);
 
     drawings.forEach(function (d) {
-      let { context } = quickDraw._strokeToCanvas(d.drawing, size);
-      let array = quickDraw._contextToArray(context, size);
+      let array = quickDraw._strokeToArray(d.drawing, size);
       transformStream.write(array);
     });
 

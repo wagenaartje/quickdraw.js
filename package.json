@@ -26,10 +26,12 @@
     "node": ">=7.6"
   },
   "dependencies": {
-    "canvas": "^2.0.0-alpha.3",
     "chai": "^4.1.1",
     "mocha": "^3.5.0",
     "ndjson": "^1.5.0"
+  },
+  "devDependencies": {
+    "semistandard": "^11.0.0"
   },
   "scripts": {
     "test": "mocha test"
