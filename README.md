@@ -45,12 +45,10 @@ var quickDraw = require('quickdraw.js');
 ## Usage
 Usage is fairly easy, but keep in mind that the Google Quick Draw dataset is
 a very large dataset. So before going mayhem on downloading, take into account
-that each _sample_ is a little more than `2kb` (for 28x28).
+that 100 samples are about `40kb` (for 28x28).
 
 With about 100000 samples for each of the 345 categories, that would take
 gigabytes of space.
-
-_[dev note] i'm looking into compressing and decompressing :)_
 
 ### quickDraw.set
 This allows you to get a dataset that is compatible with Synaptic and Neataptic.
