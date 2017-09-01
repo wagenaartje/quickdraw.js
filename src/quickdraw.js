@@ -97,7 +97,9 @@ const quickDraw = {
         let dots = quickDraw._plot(stroke[0][j - 1] * size / 256, stroke[1][j - 1] * size / 256, stroke[0][j] * size / 256, stroke[1][j] * size / 256);
         for (var k = 0; k < dots.length; k++) {
           let dot = dots[k];
-          bitmap[dot.y * size + dot.x] += dot.b;
+          if (dot.y < size && dot.x < size) {
+            bitmap[dot.y * size + dot.x] += dot.b;
+          }
         }
       }
     }
