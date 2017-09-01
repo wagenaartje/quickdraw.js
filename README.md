@@ -36,11 +36,6 @@ Installing `quickdraw.js` is easy with `npm`, just run:
 npm install quickdraw.js
 ```
 
-There is a high chance you will have a problem during the installation of the
-`canvas` library, which is a dependency. Please follow the steps
-[here](https://github.com/Automattic/node-canvas/wiki) and it should fix any
-problems.
-
 Then, in your `Node.js` script, require the library:
 
 ```js
