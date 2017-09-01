@@ -39,7 +39,7 @@ describe('quickdraw.js tests', function () {
     assert.equal(typeof set.input, 'number', 'set.input is not a number!');
     assert.equal(typeof set.output, 'number', 'set.output is not a number!');
 
-    assert.isAtLeast(set.set[0].input.length, 1, 'sample dimension is 0');
+    assert.equal(set.set[0].input.length, 784, 'sample dimension is incorrect');
 
     assert.equal(set.set[0].output.length, categories.length, 'output length does not match amount of categories1');
     assert.equal(amount, set.set.length, 'dataset is not the given size!');
