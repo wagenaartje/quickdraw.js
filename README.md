@@ -136,6 +136,24 @@ quickDraw.import('broccoli', 400);
 
 Will download, convert and save 400 28x28 samples from the `brocolli` category.
 
+### quickDraw.checkSet
+Checks the properties of a locally saved set. Basic usage:
+
+```js
+quickDraw.checkSet(category);
+```
+
+So if you want to check the properties of the `banana` category, the code would
+be:
+
+```js
+quickDraw.checkSet('banana');
+```
+
+The function returns an object containing the following properties:
+* `size` the amount of samples locally saved of the category
+* `dimension` the dimensions of the array (28 = 28x28)
+
 ## Contributing
 Feel free to contribute! Keep in mind that this project is fairly new, and I
 have some things in my head that I want to implement. So before you create a PR
