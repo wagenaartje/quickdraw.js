@@ -1,16 +1,9 @@
-const fs = require('fs');
-const path = require('path');
-const zlib = require('zlib');
-const https = require('https');
-const ndjson = require('ndjson');
 
 /*******************************************************************************
                                   QUICKDRAW
 *******************************************************************************/
 
 const quickDraw = {
-  /** List of categories */
-  categories: require('./categories'),
 
   /** Converts the strokes of a drawing to an array */
   _strokeToArray: function (data, size) {
@@ -46,167 +39,11 @@ const quickDraw = {
     return bitmap;
   },
 
-  /** Downloads the given amount of drawings from the given category */
-  _downloadSet: function (category, amount) {
-    var url = 'https://storage.googleapis.com/quickdraw_dataset/full/simplified/';
-    url += encodeURIComponent(category) + '.ndjson';
-
-    return new Promise((resolve, reject) => {
-      https.get(url, (res) => {
-        var { statusCode } = res;
-
-        if (statusCode !== 200) {
-          throw new Error(`Request Failed.\n Status Code: ${statusCode}`);
-        }
-
-        res.setEncoding('utf8');
-        var drawings = [];
-        res
-          .pipe(ndjson.parse())
-          .on('data', function (obj) {
-            if (drawings.length < amount) {
-              drawings.push(obj);
-            } else {
-              this.destroy();
-            }
-          })
-          .on('end', () => {
-            resolve(drawings);
-          })
-          .on('close', () => {
-            resolve(drawings);
-          });
-      }).on('error', (e) => {
-        throw new Error(e.message);
-      });
-    });
-  },
-
-  _readSet: function (category) {
-    var gzip = fs.readFileSync(path.join(__dirname, `./drawings/${category}.ndjson.gz`));
-    var unzipped = zlib.unzipSync(Buffer.from(gzip)).toString();
-
-    var data = unzipped.split('\r\n');
-    data.pop();
-    data = data.map(x => JSON.parse(x));
-
-    return data;
-  },
-
-  /** Checks the properties of a local set */
-  checkSet: function (category) {
-    var data = quickDraw._readSet(category);
-
-    var dimension = Math.round(Math.sqrt(data[0].length));
-    return { size: data.length, dimension: dimension };
-  },
-
-  /** Imports the dataset of the certain category  */
-  import: async function (category, amount, size = 28) {
-    var drawings = await quickDraw._downloadSet(category, amount);
-
-    if (drawings.length < amount) {
-      console.warn(`Requested ${amount} images from '${category}', only ${drawings.length} available!`);
-    }
-
-    var fileName = category + '.ndjson.gz';
-    var transformStream = ndjson.serialize();
-    var outputStream = fs.createWriteStream(path.join(__dirname, '/drawings/', fileName));
-
-    var gzip = zlib.createGzip();
-
-    transformStream.pipe(gzip).pipe(outputStream);
-
-    drawings.forEach(function (d) {
-      let array = quickDraw._strokeToArray(d.drawing, size);
-      transformStream.write(array);
-    });
-
-    transformStream.end();
-
-    return new Promise((resolve, reject) => {
-      outputStream.on('finish', function handleFinish () {
-        console.log(category, ' - Processing done! # of drawings:', drawings.length);
-        resolve();
-      });
-    });
-  },
-
-  /** Imports the datasets of all categories */
-  importAll: async function (amount, size = 28) {
-    for (var i = 0; i < quickDraw.categories.length; i++) {
-      let category = quickDraw.categories[i];
-      await quickDraw.import(category, amount, size);
-    }
-  },
-
-  /** Returns a useable dataset for Neataptic and Synaptic */
-  set: function (amount, categories = quickDraw.categories) {
-    var dataSet = [];
-
-    var chunkSize = Math.floor(amount / categories.length);
-    var rest = Math.round((amount / categories.length - chunkSize) * categories.length);
-
-    var inputSize;
-
-    for (var i = 0; i < categories.length; i++) {
-      let category = categories[i];
-
-      let data;
-      try {
-        data = quickDraw._readSet(category);
-      } catch (err) {
-        throw new Error(`Missing category: '${category}'. Please import!`);
-      }
-
-      if (i === 0) {
-        inputSize = data[0].length;
-      } else if (data[0].length !== inputSize) {
-        console.warn(`${category} set does not have correct dimensions and has not been included. Wanted dim: ${Math.sqrt(inputSize)}, ${category} dim: ${Math.sqrt(data[0].length)}`);
-      }
-
-      let toPick;
-      if (rest > 0) {
-        toPick = chunkSize + 1;
-        rest--;
-      } else {
-        toPick = chunkSize;
-      }
-
-      if (data.length < toPick) {
-        throw new Error(`Too few elements in local '${category}' set! (${data.length}, ${toPick} needed)`);
-      }
-
-      let picked = quickDraw._pickRandom(data, toPick);
-
-      for (var j = 0; j < picked.length; j++) {
-        let output = new Array(categories.length).fill(0);
-        output[i] = 1;
-
-        dataSet.push({ input: picked[j], output: output });
-      }
-    }
-
-    dataSet = quickDraw._shuffle(dataSet);
-    return { input: inputSize, set: dataSet, output: categories.length };
-  },
-
-  /** Pick non-repeating elements in a random fashion */
-  _pickRandom: function (array, amount) {
-    var picked = [];
-    for (var i = array.length - 1; i >= array.length - amount; i--) {
-      let j = Math.floor(Math.random() * (i + 1));
-
-      let pick = array[j];
-      let temp = array[i];
-
-      array[i] = pick;
-      array[j] = temp;
-
-      picked.push(pick);
-    }
-
-    return picked;
+  test: function () {
+    console.log('running test');
+    ten_cats = categories.pickRandom(10);
+    console.log(ten_cats);
+    return;
   },
 
   /** Shuffles an array */
@@ -299,4 +136,3 @@ const quickDraw = {
   }
 };
 
-module.exports = quickDraw;
