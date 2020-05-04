@@ -4,8 +4,8 @@
 function next_image() {
   //var a_set = quickDraw.set('dogs');
   quickDraw.test();
-  var src = "assets/backgrounds/taikodrummaster.jpg";
-  show_image(src, 800,600, "A random image");
+  var src = "assets/data/cat_001.svg";
+  show_image(src, 600,600, "A random image");
 }
 
 
