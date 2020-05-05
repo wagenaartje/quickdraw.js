@@ -1,4 +1,7 @@
-module.exports = [
+const categories = {
+	
+	_categories: function () {
+		var cats = [
   'aircraft carrier', 'airplane', 'alarm clock', 'ambulance', 'angel',
   'animal migration', 'ant', 'anvil', 'apple', 'arm', 'asparagus', 'axe',
   'backpack', 'banana', 'bandage', 'barn', 'baseball', 'baseball bat', 'basket',
@@ -52,4 +55,27 @@ module.exports = [
   'vase', 'violin', 'washing machine', 'watermelon', 'waterslide', 'whale',
   'wheel', 'windmill', 'wine bottle', 'wine glass', 'wristwatch', 'yoga',
   'zebra', 'zigzag'
-];
+]
+
+	return cats;
+	},
+  /** Pick non-repeating elements in a random fashion */
+  pickRandom: function (amount) {
+    const array = this._categories();
+    var picked = [];
+    for (var i = array.length - 1; i >= array.length - amount; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+
+      let pick = array[j];
+      let temp = array[i];
+
+      array[i] = pick;
+      array[j] = temp;
+
+      picked.push(pick);
+    }
+
+    return picked;
+  },
+
+};
