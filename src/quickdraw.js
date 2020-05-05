@@ -43,7 +43,7 @@ const quickDraw = {
     console.log('running test');
     ten_cats = categories.pickRandom(10);
     console.log(ten_cats);
-    return ten_cats[0];
+    return [ten_cats];
   },
 
   /** Shuffles an array */

@@ -13,31 +13,32 @@ var config = {
 };
 
 var game = new Phaser.Game(config);
-
+var button_names;
 function preload ()
 {
-    let filename = next_image();
-    console.log(filename);
-    this.load.svg('pic', filename);
-    //this.load.svg('pic', 'assets/data/cat_0000_is.svg');
-    //this.load.image('pic_t', 'assets/backgrounds/taikodrummaster.jpg');
-    this.load.svg('pic_t', 'assets/svg/grapes.svg');
+    let names = next_image();
+    button_names = names[1]
+    console.log(names);
+    this.load.svg('pic', names[0]);
 }
 
 function create ()
 {
 
-    var pic = this.add.image(125, 125, 'pic');
-	
+    var pic = this.add.image(300, 300, 'pic');
+    const helloButton = this.add.text(610, 10, button_names[0][0], { fill: '#0f0' });
+    helloButton.setInteractive();
+
+
 }
 
 
 function next_image() {
-  let category = quickDraw.test();
-  category = "cat"	
+  let [categories] = quickDraw.test();
+  categories[0] = "cat"	
   let random_number = Math.floor(Math.random() * 200)
-  let filename = "assets/data/" + category + "_" + zfill(random_number, 4) + ".svg"
-  return filename;
+  let filename = "assets/data/" + categories[0] + "_" + zfill(random_number, 4) + ".svg"
+  return [filename, [categories]];
 }
 
 function zfill(number, size) {
