@@ -30,10 +30,16 @@ function create ()
     for ( var i = 0 ; i < button_names[0].length ; i++ ){
     	answerButtons.push(this.add.text(610, 10 + i * 20, button_names[0][i], { fill: '#0f0' }));
     	answerButtons[i].setInteractive();
-	answerButtons[i].on('pointerover', () => { console.log('pointerover' + button_names[0][i]); });
+	answerButtons[i].on('pointerover', () => onPointerOver(i) )
     }
 
 
+}
+
+function onPointerOver(i)
+{
+
+	console.log('pointerover' + button_names[0][i]);
 }
 
 function next_image() {
