@@ -26,12 +26,15 @@ function create ()
 {
 
     var pic = this.add.image(300, 300, 'pic');
-    const helloButton = this.add.text(610, 10, button_names[0][0], { fill: '#0f0' });
-    helloButton.setInteractive();
+    var answerButtons = []
+    for ( var i = 0 ; i < button_names[0].length ; i++ ){
+    	answerButtons.push(this.add.text(610, 10 + i * 20, button_names[0][i], { fill: '#0f0' }));
+    	answerButtons[i].setInteractive();
+	answerButtons[i].on('pointerover', () => { console.log('pointerover' + button_names[0][i]); });
+    }
 
 
 }
-
 
 function next_image() {
   let [categories] = quickDraw.test();
