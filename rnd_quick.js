@@ -1,5 +1,7 @@
 //var quickDraw = require(['src/quickdraw.js']);
 
+//import { TextButton } from 'gameobjects/textbutton';
+
 var config = {
     type: Phaser.WEBGL,
     parent: 'phaser-example',
@@ -28,19 +30,23 @@ function create ()
     var pic = this.add.image(300, 300, 'pic');
     var answerButtons = []
     for ( var i = 0 ; i < button_names[0].length ; i++ ){
-    	answerButtons.push(this.add.text(610, 10 + i * 20, button_names[0][i], { fill: '#0f0' }));
-    	answerButtons[i].setInteractive();
-	answerButtons[i].on('pointerover', () => onPointerOver(i) )
+	
+	let button = new TextButton(this, 610, 10 + i * 20, button_names[0][i], { fill: '#0f0' });
+    	answerButtons.push(button);
+	this.add.existing(answerButtons[i]);
+    //	answerButtons.push(this.add.TextButton(610, 10 + i * 20, button_names[0][i], { fill: '#0f0' }));
+   // 	answerButtons[i].setInteractive();
+//	answerButtons[i].on('pointerover', () => onPointerOver(i) )
     }
 
 
 }
 
-function onPointerOver(i)
-{
+//function onPointerOver(i)
+//{
 
-	console.log('pointerover' + button_names[0][i]);
-}
+//	console.log('pointerover' + button_names[0][i]);
+//}
 
 function next_image() {
   let [categories] = quickDraw.test();
