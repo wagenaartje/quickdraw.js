@@ -2,7 +2,6 @@
 
 
 function next_image() {
-  //var a_set = quickDraw.set('dogs');
   let category = quickDraw.test();
   category = "cat"	
   let random_number = Math.floor(Math.random() * 200)
