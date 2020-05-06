@@ -49,6 +49,7 @@ var lives;
 var answerButtons;
 var pic;
 var background_image;
+var whatWasItText;
 
 
 function preloadImageScene ()
@@ -112,6 +113,7 @@ function createWellDoneScene ()
 function createBadLuckScene ()
 {
     this.add.image(300, 300, 'picbl');
+    whatWasItText = this.add.text(220, 300, '' + right_answer, { fill: '#000' });
 } 
 
 function sleep(ms) {
@@ -119,13 +121,12 @@ function sleep(ms) {
 }
 async function on_success()
 {
-	let new_inc = last_inc + last_but_one_inc
-	last_but_one_inc = last_inc
-	last_inc = new_inc
-	score += new_inc
+	let new_inc = last_inc + last_but_one_inc;
+	last_but_one_inc = last_inc;
+	last_inc = new_inc;
+	score += new_inc;
 	scoreText.setText('Score: ' + score);
 
-	console.log("Well done");
 	game.scene.run('welldonescene');
 	game.scene.stop('imagescene');
 	game.scene.remove('imagescene');
@@ -137,9 +138,34 @@ async function on_success()
 	update_buttons();
 	
 }
-function on_fail()
+async function on_fail()
 {
-	console.log("Bad luck");
+	last_but_one_inc = 0;
+        last_inc = 1;
+	lives -= 1;
+	livesText.setText('Lives: ' + lives)
+	
+	game.scene.run('badluckscene');
+	game.scene.stop('imagescene');
+	game.scene.remove('imagescene');
+	game.scene.bringToTop('badluckscene');
+	whatWasItText.setText('It was a ' + right_answer);
+	await sleep(1000);
+
+	if ( lives > 0 )
+	{
+		game.scene.stop('badluckscene');
+		game.scene.add('imagescene', imageSceneConfig, true);
+		update_buttons();
+	}
+	else
+	{
+		whatWasItText.setText('Game Over! You scored ' + score);
+		game.scene.stop('buttonscene');
+		game.scene.stop();
+	}
+
+
 }
 
 
