@@ -77,7 +77,7 @@ function createButtonScene ()
     answerButtons = []
 
     for ( var i = 0 ; i < button_names.length ; i++ ){
-	let button = new TextButton(this, 610, 10 + i * 20, button_names[i], { fill: '#0f0' }, right_answer, on_success, on_fail);
+	let button = new TextButton(this, 610, 10 + i * 20, button_names[i], { fill: '#0f0' }, checkanswer);
     	answerButtons.push(button);
 	this.add.existing(answerButtons[i]);
     }
@@ -119,6 +119,7 @@ function createBadLuckScene ()
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
+
 async function on_success()
 {
 	let new_inc = last_inc + last_but_one_inc;
@@ -168,6 +169,18 @@ async function on_fail()
 
 }
 
+function checkanswer (text)
+{
+	console.log(text + " =? " + right_answer);
+	if ( text == right_answer )
+	{
+		on_success();
+	}
+	else
+	{
+		on_fail();
+	}
+}
 
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
@@ -190,7 +203,6 @@ function shuffle(array) {
 
 function next_image() {
   let [categories] = quickDraw.test();
-  categories[0] = "cat"	
   let random_number = Math.floor(Math.random() * 200)
   let filename = "assets/data/black_on_white/" + categories[0] + "_" + zfill(random_number, 4) + ".svg"
   return [filename, [categories]];
