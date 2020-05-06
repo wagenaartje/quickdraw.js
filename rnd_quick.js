@@ -129,12 +129,12 @@ async function on_success()
 	scoreText.setText('Score: ' + score);
 
 	game.scene.run('welldonescene');
+	game.scene.bringToTop('welldonescene');
 	game.scene.stop('imagescene');
 	game.scene.remove('imagescene');
-	game.scene.bringToTop('welldonescene');
 	await sleep(1000);
-	game.scene.stop('welldonescene');
 	game.scene.add('imagescene', imageSceneConfig, true);
+	game.scene.stop('welldonescene');
 
 	update_buttons();
 	
