@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with ndjsontosvg (https:https://github.com/thompson318/ndjsontosvg) 
+	from the simplified Google quickdraw data set. key_id = 6700227018883072-->
+<svg width="600" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	xmlns:ndjsontosvg="https://github.com/thompson318/ndjsontosvg"
+	xmlns:quickdraw="https://quickdraw.withgoogle.com/data"
+	xmlns:scikit-surgery="https://doi.org/10.1007/s11548-020-02180-5">
+
+	<rect width="100%" height="100%" fill="white" />
+	<path d = "M 332.81 208.59 L 323.44 201.56 L 269.53 199.22 L 96.09 199.22 L 56.25 217.97 L 21.09 248.44 L 0.00 297.66 L 2.34 339.84 L 16.41 367.97 L 44.53 396.09 L 67.97 410.16 L 142.97 428.91 L 262.50 431.25 L 349.22 421.88 L 414.84 403.12 L 457.03 377.34 L 473.44 346.88 L 473.44 309.38 L 459.38 285.94 L 431.25 253.12 L 384.38 217.97 L 342.19 201.56 L 307.03 199.22 L 435.94 72.66 L 468.75 58.59 L 499.22 56.25 L 517.97 75.00 L 534.38 154.69 L 529.69 194.53 L 464.06 227.34 L 410.16 227.34 L 370.31 213.28" stroke="black" fill="transparent"/>
+	<path d = "M 135.94 421.88 L 114.84 419.53 L 100.78 431.25 L 11.72 536.72" stroke="black" fill="transparent"/>
+	<path d = "M 171.09 426.56 L 117.19 560.16 L 112.50 597.66" stroke="black" fill="transparent"/>
+	<path d = "M 328.12 428.91 L 332.81 564.84 L 349.22 595.31" stroke="black" fill="transparent"/>
+	<path d = "M 454.69 358.59 L 452.34 564.84" stroke="black" fill="transparent"/>
+	<path d = "M 63.28 220.31 L 49.22 253.12 L 75.00 255.47 L 79.69 267.19 L 65.62 316.41 L 84.38 321.09 L 70.31 363.28 L 72.66 372.66 L 98.44 372.66 L 84.38 403.12 L 84.38 412.50 L 91.41 414.84 L 96.09 358.59 L 60.94 283.59 L 63.28 246.09 L 91.41 208.59" stroke="black" fill="transparent"/>
+	<path d = "M 164.06 220.31 L 138.28 290.62 L 166.41 292.97 L 194.53 281.25 L 194.53 297.66 L 166.41 344.53 L 161.72 370.31 L 166.41 379.69 L 222.66 375.00 L 199.22 419.53 L 250.78 330.47 L 253.12 302.34 L 243.75 295.31 L 171.09 297.66 L 150.00 220.31" stroke="black" fill="transparent"/>
+	<path d = "M 285.94 222.66 L 262.50 274.22 L 271.88 281.25 L 316.41 274.22 L 302.34 325.78 L 307.03 337.50 L 325.78 346.88 L 323.44 384.38 L 344.53 391.41 L 330.47 419.53 L 335.16 367.97 L 290.62 328.12 L 292.97 253.12 L 281.25 241.41 L 260.16 234.38" stroke="black" fill="transparent"/>
+	<path d = "M 384.38 229.69 L 349.22 307.03 L 356.25 314.06 L 403.12 311.72 L 393.75 370.31 L 412.50 379.69 L 417.19 389.06 L 403.12 405.47 L 410.16 379.69 L 384.38 367.97 L 379.69 353.91 L 384.38 250.78 L 375.00 243.75 L 346.88 239.06" stroke="black" fill="transparent"/>
+	<path d = "M 419.53 79.69 L 410.16 70.31 L 407.81 28.12 L 442.97 82.03" stroke="black" fill="transparent"/>
+	<path d = "M 473.44 65.62 L 499.22 0.00 L 508.59 51.56" stroke="black" fill="transparent"/>
+	<path d = "M 520.31 96.09 L 557.81 98.44 L 571.88 114.84 L 581.25 145.31 L 578.91 175.78 L 555.47 180.47 L 489.84 175.78" stroke="black" fill="transparent"/>
+</svg>

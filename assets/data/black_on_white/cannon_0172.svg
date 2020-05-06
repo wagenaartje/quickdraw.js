@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with ndjsontosvg (https:https://github.com/thompson318/ndjsontosvg) 
+	from the simplified Google quickdraw data set. key_id = 4733903447261184-->
+<svg width="600" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	xmlns:ndjsontosvg="https://github.com/thompson318/ndjsontosvg"
+	xmlns:quickdraw="https://quickdraw.withgoogle.com/data"
+	xmlns:scikit-surgery="https://doi.org/10.1007/s11548-020-02180-5">
+
+	<rect width="100%" height="100%" fill="white" />
+	<path d = "M 180.47 196.88 L 161.72 175.78 L 107.81 173.44 L 91.41 185.16 L 82.03 210.94 L 84.38 278.91 L 112.50 307.03 L 201.56 311.72 L 222.66 307.03 L 253.12 281.25 L 260.16 262.50 L 262.50 213.28 L 236.72 185.16 L 189.84 164.06 L 131.25 164.06" stroke="black" fill="transparent"/>
+	<path d = "M 173.44 229.69 L 161.72 227.34 L 175.78 175.78" stroke="black" fill="transparent"/>
+	<path d = "M 150.00 229.69 L 133.59 213.28 L 98.44 210.94" stroke="black" fill="transparent"/>
+	<path d = "M 182.81 239.06 L 196.88 227.34 L 248.44 203.91" stroke="black" fill="transparent"/>
+	<path d = "M 168.75 215.62 L 112.50 295.31" stroke="black" fill="transparent"/>
+	<path d = "M 166.41 229.69 L 187.50 276.56 L 208.59 302.34" stroke="black" fill="transparent"/>
+	<path d = "M 107.81 168.75 L 93.75 180.47 L 60.94 173.44 L 23.44 133.59 L 0.00 84.38 L 0.00 51.56 L 7.03 39.84 L 75.00 4.69 L 119.53 2.34 L 201.56 46.88 L 302.34 72.66 L 377.34 72.66 L 417.19 63.28 L 482.81 60.94" stroke="black" fill="transparent"/>
+	<path d = "M 222.66 171.09 L 283.59 173.44 L 344.53 210.94 L 372.66 220.31 L 424.22 222.66 L 440.62 215.62 L 496.88 164.06 L 508.59 131.25 L 506.25 84.38 L 482.81 67.97" stroke="black" fill="transparent"/>
+	<path d = "M 543.75 35.16 L 550.78 23.44 L 592.97 0.00" stroke="black" fill="transparent"/>
+	<path d = "M 550.78 128.91 L 597.66 159.38" stroke="black" fill="transparent"/>
+	<path d = "M 520.31 213.28 L 522.66 232.03 L 546.09 269.53" stroke="black" fill="transparent"/>
+</svg>

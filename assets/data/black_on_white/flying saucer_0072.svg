@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with ndjsontosvg (https:https://github.com/thompson318/ndjsontosvg) 
+	from the simplified Google quickdraw data set. key_id = 5164142954545152-->
+<svg width="600" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	xmlns:ndjsontosvg="https://github.com/thompson318/ndjsontosvg"
+	xmlns:quickdraw="https://quickdraw.withgoogle.com/data"
+	xmlns:scikit-surgery="https://doi.org/10.1007/s11548-020-02180-5">
+
+	<rect width="100%" height="100%" fill="white" />
+	<path d = "M 564.84 335.16 L 529.69 342.19 L 185.16 351.56 L 2.34 372.66 L 0.00 360.94 L 21.09 255.47 L 32.81 229.69 L 46.88 227.34 L 187.50 229.69 L 264.84 222.66 L 450.00 189.84 L 492.19 217.97 L 574.22 311.72 L 562.50 309.38 L 539.06 285.94 L 457.03 175.78 L 445.31 117.19 L 417.19 60.94 L 375.00 23.44 L 325.78 2.34 L 281.25 0.00 L 208.59 16.41 L 142.97 49.22 L 91.41 124.22 L 65.62 234.38" stroke="black" fill="transparent"/>
+	<path d = "M 53.91 356.25 L 63.28 351.56 L 79.69 358.59 L 255.47 475.78 L 292.97 487.50 L 363.28 473.44 L 435.94 473.44 L 445.31 464.06 L 478.12 363.28" stroke="black" fill="transparent"/>
+	<path d = "M 428.91 281.25 L 417.19 271.88 L 403.12 274.22 L 393.75 281.25 L 398.44 292.97 L 424.22 281.25 L 421.88 271.88" stroke="black" fill="transparent"/>
+	<path d = "M 281.25 260.16 L 271.88 269.53 L 274.22 281.25 L 297.66 278.91 L 285.94 269.53 L 262.50 283.59" stroke="black" fill="transparent"/>
+	<path d = "M 107.81 288.28 L 150.00 300.00 L 161.72 295.31 L 154.69 285.94" stroke="black" fill="transparent"/>
+	<path d = "M 53.91 295.31 L 39.84 307.03 L 49.22 309.38 L 42.19 304.69" stroke="black" fill="transparent"/>
+	<path d = "M 262.50 213.28 L 262.50 175.78 L 297.66 161.72 L 321.09 133.59 L 318.75 114.84 L 309.38 98.44 L 295.31 86.72 L 257.81 82.03 L 222.66 96.09 L 196.88 124.22 L 203.91 152.34 L 222.66 164.06 L 243.75 168.75 L 274.22 161.72" stroke="black" fill="transparent"/>
+	<path d = "M 267.19 574.22 L 271.88 597.66" stroke="black" fill="transparent"/>
+</svg>

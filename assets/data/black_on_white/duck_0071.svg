@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with ndjsontosvg (https:https://github.com/thompson318/ndjsontosvg) 
+	from the simplified Google quickdraw data set. key_id = 6322832793403392-->
+<svg width="600" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	xmlns:ndjsontosvg="https://github.com/thompson318/ndjsontosvg"
+	xmlns:quickdraw="https://quickdraw.withgoogle.com/data"
+	xmlns:scikit-surgery="https://doi.org/10.1007/s11548-020-02180-5">
+
+	<rect width="100%" height="100%" fill="white" />
+	<path d = "M 232.03 44.53 L 253.12 25.78 L 330.47 2.34 L 367.97 0.00 L 442.97 23.44 L 468.75 60.94 L 494.53 126.56 L 487.50 168.75 L 452.34 187.50 L 410.16 196.88 L 370.31 178.12" stroke="black" fill="transparent"/>
+	<path d = "M 248.44 75.00 L 269.53 128.91 L 318.75 180.47 L 372.66 189.84 L 377.34 180.47" stroke="black" fill="transparent"/>
+	<path d = "M 454.69 112.50 L 560.16 126.56 L 590.62 131.25 L 597.66 140.62 L 597.66 220.31 L 468.75 178.12" stroke="black" fill="transparent"/>
+	<path d = "M 260.16 133.59 L 131.25 110.16 L 42.19 112.50 L 9.38 154.69 L 0.00 199.22 L 2.34 257.81 L 11.72 274.22 L 63.28 304.69 L 147.66 318.75 L 290.62 318.75 L 323.44 285.94 L 370.31 192.19" stroke="black" fill="transparent"/>
+	<path d = "M 53.91 309.38 L 42.19 382.03 L 105.47 360.94 L 131.25 377.34 L 140.62 396.09 L 131.25 414.84 L 91.41 414.84 L 30.47 398.44" stroke="black" fill="transparent"/>
+	<path d = "M 232.03 304.69 L 239.06 358.59 L 283.59 339.84 L 325.78 339.84 L 370.31 353.91 L 375.00 382.03 L 365.62 410.16 L 335.16 421.88 L 288.28 424.22 L 246.09 410.16 L 227.34 360.94" stroke="black" fill="transparent"/>
+	<path d = "M 400.78 63.28 L 400.78 96.09 L 410.16 96.09 L 419.53 82.03 L 419.53 70.31 L 400.78 65.62" stroke="black" fill="transparent"/>
+</svg>

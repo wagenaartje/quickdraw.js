@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with ndjsontosvg (https:https://github.com/thompson318/ndjsontosvg) 
+	from the simplified Google quickdraw data set. key_id = 6227870395400192-->
+<svg width="600" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	xmlns:ndjsontosvg="https://github.com/thompson318/ndjsontosvg"
+	xmlns:quickdraw="https://quickdraw.withgoogle.com/data"
+	xmlns:scikit-surgery="https://doi.org/10.1007/s11548-020-02180-5">
+
+	<rect width="100%" height="100%" fill="white" />
+	<path d = "M 386.72 42.19 L 365.62 30.47 L 339.84 28.12 L 250.78 49.22 L 142.97 121.88 L 77.34 185.16 L 49.22 227.34 L 7.03 330.47 L 0.00 403.12 L 14.06 464.06 L 67.97 543.75 L 84.38 557.81 L 150.00 585.94 L 210.94 595.31 L 255.47 597.66 L 337.50 583.59 L 400.78 560.16 L 461.72 515.62 L 534.38 442.97 L 555.47 400.78 L 571.88 337.50 L 569.53 276.56 L 522.66 112.50 L 492.19 65.62 L 447.66 35.16 L 339.84 0.00" stroke="black" fill="transparent"/>
+	<path d = "M 133.59 414.84 L 145.31 440.62 L 171.09 466.41 L 203.91 485.16 L 248.44 489.84 L 353.91 464.06 L 391.41 440.62 L 421.88 410.16 L 424.22 396.09 L 417.19 384.38 L 365.62 367.97 L 297.66 363.28 L 79.69 379.69" stroke="black" fill="transparent"/>
+	<path d = "M 274.22 135.94 L 264.84 131.25 L 220.31 140.62 L 161.72 178.12 L 135.94 232.03 L 142.97 285.94 L 164.06 304.69 L 201.56 311.72 L 262.50 292.97 L 335.16 232.03 L 363.28 201.56 L 365.62 171.09 L 346.88 147.66 L 292.97 117.19 L 253.12 110.16" stroke="black" fill="transparent"/>
+	<path d = "M 264.84 215.62 L 250.78 215.62 L 210.94 239.06 L 196.88 264.84 L 206.25 271.88 L 222.66 267.19 L 241.41 246.09 L 248.44 215.62 L 232.03 217.97 L 225.00 227.34 L 229.69 232.03 L 260.16 213.28" stroke="black" fill="transparent"/>
+	<path d = "M 428.91 117.19 L 428.91 107.81 L 410.16 110.16 L 377.34 138.28 L 346.88 189.84 L 353.91 225.00 L 377.34 250.78 L 414.84 260.16 L 457.03 253.12 L 489.84 227.34 L 508.59 180.47 L 503.91 138.28 L 489.84 114.84 L 433.59 84.38" stroke="black" fill="transparent"/>
+</svg>

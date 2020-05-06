@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with ndjsontosvg (https:https://github.com/thompson318/ndjsontosvg) 
+	from the simplified Google quickdraw data set. key_id = 4645224687075328-->
+<svg width="600" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	xmlns:ndjsontosvg="https://github.com/thompson318/ndjsontosvg"
+	xmlns:quickdraw="https://quickdraw.withgoogle.com/data"
+	xmlns:scikit-surgery="https://doi.org/10.1007/s11548-020-02180-5">
+
+	<rect width="100%" height="100%" fill="white" />
+	<path d = "M 0.00 307.03 L 107.81 260.16 L 145.31 248.44 L 196.88 220.31 L 365.62 112.50 L 393.75 84.38 L 461.72 46.88 L 480.47 28.12" stroke="black" fill="transparent"/>
+	<path d = "M 32.81 159.38 L 79.69 189.84 L 213.28 367.97 L 253.12 414.84" stroke="black" fill="transparent"/>
+	<path d = "M 196.88 75.00 L 229.69 93.75 L 339.84 201.56 L 459.38 285.94 L 503.91 330.47" stroke="black" fill="transparent"/>
+	<path d = "M 396.09 0.00 L 433.59 56.25 L 489.84 107.81 L 597.66 159.38" stroke="black" fill="transparent"/>
+</svg>

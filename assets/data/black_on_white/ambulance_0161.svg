@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with ndjsontosvg (https:https://github.com/thompson318/ndjsontosvg) 
+	from the simplified Google quickdraw data set. key_id = 6535510912663552-->
+<svg width="600" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	xmlns:ndjsontosvg="https://github.com/thompson318/ndjsontosvg"
+	xmlns:quickdraw="https://quickdraw.withgoogle.com/data"
+	xmlns:scikit-surgery="https://doi.org/10.1007/s11548-020-02180-5">
+
+	<rect width="100%" height="100%" fill="white" />
+	<path d = "M 21.09 79.69 L 16.41 161.72 L 25.78 365.62 L 32.81 417.19 L 42.19 433.59 L 100.78 435.94 L 217.97 421.88 L 316.41 419.53 L 342.19 358.59 L 344.53 246.09 L 325.78 117.19 L 300.00 84.38 L 248.44 67.97 L 119.53 56.25 L 70.31 56.25 L 0.00 70.31" stroke="black" fill="transparent"/>
+	<path d = "M 152.34 7.03 L 145.31 0.00 L 128.91 0.00 L 114.84 11.72 L 107.81 53.91 L 114.84 60.94 L 128.91 63.28 L 135.94 56.25 L 133.59 16.41 L 138.28 9.38" stroke="black" fill="transparent"/>
+	<path d = "M 178.12 28.12 L 164.06 25.78 L 147.66 37.50 L 138.28 58.59 L 152.34 63.28 L 161.72 51.56 L 161.72 32.81" stroke="black" fill="transparent"/>
+	<path d = "M 243.75 447.66 L 248.44 435.94 L 239.06 424.22 L 217.97 419.53 L 210.94 457.03 L 225.00 471.09 L 241.41 475.78 L 269.53 468.75 L 283.59 459.38 L 302.34 424.22 L 302.34 398.44 L 295.31 386.72 L 262.50 372.66" stroke="black" fill="transparent"/>
+	<path d = "M 86.72 454.69 L 63.28 438.28 L 44.53 438.28 L 35.16 457.03 L 37.50 478.12 L 56.25 496.88 L 86.72 503.91 L 98.44 499.22 L 119.53 475.78 L 124.22 442.97 L 91.41 433.59" stroke="black" fill="transparent"/>
+	<path d = "M 342.19 278.91 L 375.00 276.56 L 501.56 250.78 L 555.47 250.78 L 567.19 269.53 L 597.66 389.06 L 583.59 393.75 L 440.62 405.47 L 297.66 407.81" stroke="black" fill="transparent"/>
+	<path d = "M 581.25 403.12 L 546.09 400.78 L 529.69 410.16 L 525.00 431.25 L 557.81 435.94 L 588.28 417.19 L 595.31 393.75 L 571.88 389.06" stroke="black" fill="transparent"/>
+	<path d = "M 485.16 414.84 L 485.16 414.84" stroke="black" fill="transparent"/>
+</svg>

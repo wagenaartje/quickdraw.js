@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with ndjsontosvg (https:https://github.com/thompson318/ndjsontosvg) 
+	from the simplified Google quickdraw data set. key_id = 6403548495478784-->
+<svg width="600" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	xmlns:ndjsontosvg="https://github.com/thompson318/ndjsontosvg"
+	xmlns:quickdraw="https://quickdraw.withgoogle.com/data"
+	xmlns:scikit-surgery="https://doi.org/10.1007/s11548-020-02180-5">
+
+	<rect width="100%" height="100%" fill="white" />
+	<path d = "M 16.41 346.88 L 35.16 363.28 L 53.91 363.28 L 67.97 349.22 L 70.31 337.50 L 53.91 328.12 L 21.09 330.47 L 4.69 344.53 L 0.00 372.66" stroke="black" fill="transparent"/>
+	<path d = "M 133.59 351.56 L 110.16 377.34 L 112.50 428.91 L 126.56 457.03 L 138.28 468.75 L 154.69 471.09 L 175.78 461.72 L 192.19 417.19 L 192.19 346.88 L 142.97 344.53 L 128.91 360.94 L 128.91 389.06" stroke="black" fill="transparent"/>
+	<path d = "M 213.28 386.72 L 203.91 433.59 L 225.00 459.38 L 257.81 457.03 L 269.53 426.56 L 267.19 412.50 L 225.00 412.50 L 222.66 438.28" stroke="black" fill="transparent"/>
+	<path d = "M 0.00 419.53 L 32.81 454.69 L 65.62 461.72 L 82.03 442.97 L 75.00 414.84 L 32.81 410.16 L 21.09 414.84" stroke="black" fill="transparent"/>
+	<path d = "M 56.25 480.47 L 25.78 503.91 L 30.47 527.34 L 70.31 550.78 L 84.38 534.38 L 82.03 487.50 L 44.53 480.47 L 18.75 513.28" stroke="black" fill="transparent"/>
+	<path d = "M 166.41 522.66 L 150.00 576.56 L 171.09 597.66 L 185.16 597.66 L 208.59 564.84 L 210.94 525.00 L 185.16 513.28 L 161.72 513.28 L 150.00 517.97 L 138.28 534.38" stroke="black" fill="transparent"/>
+	<path d = "M 208.59 466.41 L 215.62 508.59 L 229.69 492.19 L 234.38 466.41 L 166.41 464.06" stroke="black" fill="transparent"/>
+	<path d = "M 112.50 478.12 L 110.16 532.03 L 154.69 536.72 L 166.41 532.03 L 173.44 517.97 L 168.75 482.81 L 93.75 478.12 L 51.56 501.56" stroke="black" fill="transparent"/>
+	<path d = "M 63.28 370.31 L 72.66 407.81 L 89.06 417.19 L 103.12 417.19 L 114.84 403.12 L 117.19 370.31 L 103.12 360.94 L 82.03 360.94" stroke="black" fill="transparent"/>
+	<path d = "M 114.84 335.16 L 86.72 314.06 L 79.69 281.25 L 119.53 295.31 L 161.72 276.56 L 168.75 309.38 L 182.81 318.75 L 210.94 321.09 L 246.09 309.38 L 274.22 323.44" stroke="black" fill="transparent"/>
+	<path d = "M 166.41 300.00 L 192.19 229.69 L 210.94 199.22 L 382.03 18.75 L 412.50 0.00" stroke="black" fill="transparent"/>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with ndjsontosvg (https:https://github.com/thompson318/ndjsontosvg) 
+	from the simplified Google quickdraw data set. key_id = 6692828128215040-->
+<svg width="600" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	xmlns:ndjsontosvg="https://github.com/thompson318/ndjsontosvg"
+	xmlns:quickdraw="https://quickdraw.withgoogle.com/data"
+	xmlns:scikit-surgery="https://doi.org/10.1007/s11548-020-02180-5">
+
+	<rect width="100%" height="100%" fill="black" />
+	<path d = "M 128.91 30.47 L 89.06 58.59 L 56.25 96.09 L 25.78 150.00 L 2.34 225.00 L 2.34 335.16 L 16.41 367.97 L 58.59 410.16 L 117.19 435.94 L 185.16 440.62 L 217.97 426.56 L 271.88 384.38 L 295.31 353.91 L 321.09 278.91 L 325.78 157.03 L 295.31 84.38 L 243.75 28.12 L 182.81 4.69 L 124.22 0.00" stroke="white" fill="transparent"/>
+	<path d = "M 63.28 157.03 L 91.41 140.62 L 150.00 135.94" stroke="white" fill="transparent"/>
+	<path d = "M 206.25 147.66 L 243.75 138.28 L 292.97 140.62" stroke="white" fill="transparent"/>
+	<path d = "M 98.44 274.22 L 126.56 290.62 L 164.06 300.00 L 210.94 302.34 L 241.41 295.31" stroke="white" fill="transparent"/>
+	<path d = "M 166.41 203.91 L 166.41 203.91" stroke="white" fill="transparent"/>
+	<path d = "M 173.44 192.19 L 171.09 213.28" stroke="white" fill="transparent"/>
+	<path d = "M 175.78 321.09 L 145.31 318.75 L 147.66 346.88 L 161.72 360.94 L 201.56 323.44 L 152.34 325.78 L 182.81 323.44 L 159.38 328.12 L 171.09 330.47 L 161.72 339.84" stroke="white" fill="transparent"/>
+	<path d = "M 227.34 328.12 L 225.00 309.38 L 199.22 292.97 L 161.72 285.94 L 112.50 288.28 L 79.69 307.03 L 72.66 318.75 L 72.66 363.28 L 82.03 386.72 L 124.22 424.22 L 157.03 433.59 L 217.97 433.59 L 243.75 421.88 L 274.22 384.38 L 276.56 342.19 L 271.88 325.78 L 246.09 297.66 L 203.91 288.28" stroke="white" fill="transparent"/>
+	<path d = "M 288.28 335.16 L 597.66 246.09" stroke="white" fill="transparent"/>
+	<path d = "M 325.78 300.00 L 285.94 339.84" stroke="white" fill="transparent"/>
+</svg>

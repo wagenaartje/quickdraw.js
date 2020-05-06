@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with ndjsontosvg (https:https://github.com/thompson318/ndjsontosvg) 
+	from the simplified Google quickdraw data set. key_id = 5129756074835968-->
+<svg width="600" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	xmlns:ndjsontosvg="https://github.com/thompson318/ndjsontosvg"
+	xmlns:quickdraw="https://quickdraw.withgoogle.com/data"
+	xmlns:scikit-surgery="https://doi.org/10.1007/s11548-020-02180-5">
+
+	<rect width="100%" height="100%" fill="white" />
+	<path d = "M 121.88 110.16 L 42.19 147.66 L 14.06 210.94 L 2.34 264.84 L 0.00 304.69 L 14.06 323.44 L 25.78 264.84 L 53.91 222.66 L 86.72 208.59 L 133.59 199.22 L 119.53 257.81 L 114.84 328.12 L 140.62 410.16 L 173.44 433.59 L 199.22 431.25 L 225.00 417.19 L 262.50 367.97 L 269.53 311.72 L 264.84 182.81 L 283.59 192.19 L 297.66 225.00 L 318.75 335.16 L 325.78 337.50 L 337.50 309.38 L 339.84 217.97 L 323.44 152.34 L 307.03 117.19 L 269.53 105.47 L 276.56 91.41 L 276.56 58.59 L 243.75 4.69 L 199.22 0.00 L 150.00 30.47 L 119.53 79.69 L 121.88 100.78 L 150.00 112.50" stroke="black" fill="transparent"/>
+	<path d = "M 194.53 70.31 L 201.56 107.81 L 213.28 82.03" stroke="black" fill="transparent"/>
+	<path d = "M 192.19 42.19 L 189.84 42.19" stroke="black" fill="transparent"/>
+	<path d = "M 208.59 42.19 L 210.94 42.19" stroke="black" fill="transparent"/>
+	<path d = "M 182.81 201.56 L 175.78 271.88 L 178.12 344.53 L 187.50 367.97 L 210.94 346.88 L 229.69 264.84 L 227.34 225.00 L 213.28 213.28 L 180.47 210.94" stroke="black" fill="transparent"/>
+	<path d = "M 138.28 403.12 L 138.28 480.47 L 128.91 522.66 L 105.47 571.88 L 112.50 578.91 L 124.22 560.16 L 142.97 581.25 L 147.66 548.44 L 152.34 567.19 L 166.41 576.56 L 175.78 541.41 L 173.44 499.22 L 192.19 428.91" stroke="black" fill="transparent"/>
+	<path d = "M 206.25 426.56 L 213.28 435.94 L 220.31 485.16 L 215.62 597.66 L 232.03 576.56 L 250.78 581.25 L 255.47 567.19 L 271.88 588.28 L 269.53 503.91" stroke="black" fill="transparent"/>
+</svg>
