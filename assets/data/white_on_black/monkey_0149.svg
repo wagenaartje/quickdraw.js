@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with ndjsontosvg (https:https://github.com/thompson318/ndjsontosvg) 
+	from the simplified Google quickdraw data set. key_id = 5605837793918976-->
+<svg width="600" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	xmlns:ndjsontosvg="https://github.com/thompson318/ndjsontosvg"
+	xmlns:quickdraw="https://quickdraw.withgoogle.com/data"
+	xmlns:scikit-surgery="https://doi.org/10.1007/s11548-020-02180-5">
+
+	<rect width="100%" height="100%" fill="black" />
+	<path d = "M 199.22 84.38 L 210.94 58.59 L 283.59 11.72 L 363.28 2.34 L 393.75 16.41 L 435.94 56.25 L 457.03 110.16 L 452.34 161.72 L 414.84 234.38 L 363.28 285.94 L 300.00 325.78 L 241.41 328.12 L 182.81 278.91 L 161.72 229.69 L 159.38 157.03 L 178.12 93.75 L 201.56 49.22 L 246.09 16.41" stroke="white" fill="transparent"/>
+	<path d = "M 161.72 63.28 L 150.00 56.25 L 133.59 56.25 L 84.38 72.66 L 30.47 105.47 L 2.34 140.62 L 2.34 168.75 L 30.47 192.19 L 112.50 201.56" stroke="white" fill="transparent"/>
+	<path d = "M 442.97 42.19 L 494.53 9.38 L 548.44 0.00 L 578.91 25.78 L 597.66 77.34 L 595.31 112.50 L 553.12 142.97 L 496.88 150.00 L 461.72 142.97" stroke="white" fill="transparent"/>
+	<path d = "M 239.06 100.78 L 236.72 145.31" stroke="white" fill="transparent"/>
+	<path d = "M 365.62 93.75 L 370.31 150.00" stroke="white" fill="transparent"/>
+	<path d = "M 295.31 192.19 L 295.31 215.62" stroke="white" fill="transparent"/>
+	<path d = "M 185.16 356.25 L 171.09 353.91 L 145.31 419.53 L 135.94 468.75 L 135.94 513.28 L 147.66 529.69 L 187.50 557.81 L 257.81 560.16 L 342.19 503.91 L 358.59 485.16 L 377.34 428.91 L 377.34 372.66 L 314.06 316.41" stroke="white" fill="transparent"/>
+	<path d = "M 403.12 353.91 L 464.06 353.91 L 473.44 379.69 L 419.53 412.50 L 382.03 414.84" stroke="white" fill="transparent"/>
+	<path d = "M 119.53 403.12 L 70.31 403.12 L 39.84 417.19 L 25.78 435.94 L 25.78 457.03 L 37.50 466.41 L 65.62 471.09 L 119.53 459.38" stroke="white" fill="transparent"/>
+</svg>

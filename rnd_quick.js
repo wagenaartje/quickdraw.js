@@ -204,7 +204,7 @@ function shuffle(array) {
 function next_image() {
   let [categories] = quickDraw.test();
   let random_number = Math.floor(Math.random() * 200)
-  let filename = "https://github.com/thompson318/quickdraw-data/blob/master/black_on_white/" + categories[0] + "_" + zfill(random_number, 4) + ".svg"
+  let filename = "assets/data/black_on_white/" + categories[0] + "_" + zfill(random_number, 4) + ".svg"
   return [filename, [categories]];
 }
 

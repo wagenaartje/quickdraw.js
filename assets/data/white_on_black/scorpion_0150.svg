@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with ndjsontosvg (https:https://github.com/thompson318/ndjsontosvg) 
+	from the simplified Google quickdraw data set. key_id = 6244043761647616-->
+<svg width="600" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	xmlns:ndjsontosvg="https://github.com/thompson318/ndjsontosvg"
+	xmlns:quickdraw="https://quickdraw.withgoogle.com/data"
+	xmlns:scikit-surgery="https://doi.org/10.1007/s11548-020-02180-5">
+
+	<rect width="100%" height="100%" fill="black" />
+	<path d = "M 18.75 285.94 L 4.69 292.97 L 0.00 311.72 L 2.34 332.81 L 16.41 356.25 L 65.62 386.72 L 114.84 393.75 L 147.66 382.03 L 164.06 358.59 L 168.75 330.47 L 157.03 307.03 L 140.62 295.31 L 98.44 281.25 L 23.44 278.91 L 9.38 285.94" stroke="white" fill="transparent"/>
+	<path d = "M 351.56 295.31 L 292.97 271.88 L 243.75 267.19 L 206.25 276.56 L 173.44 300.00 L 168.75 330.47 L 192.19 367.97 L 232.03 398.44 L 269.53 412.50 L 332.81 414.84 L 377.34 405.47 L 452.34 375.00 L 475.78 358.59 L 482.81 339.84 L 471.09 314.06 L 414.84 290.62 L 283.59 288.28" stroke="white" fill="transparent"/>
+	<path d = "M 478.12 339.84 L 510.94 292.97 L 532.03 229.69 L 532.03 189.84 L 520.31 147.66 L 482.81 103.12 L 424.22 72.66 L 379.69 65.62 L 318.75 65.62 L 281.25 96.09 L 262.50 140.62 L 269.53 142.97" stroke="white" fill="transparent"/>
+	<path d = "M 262.50 161.72 L 250.78 206.25 L 260.16 164.06" stroke="white" fill="transparent"/>
+	<path d = "M 267.19 150.00 L 239.06 112.50 L 236.72 75.00 L 285.94 25.78 L 346.88 2.34 L 431.25 0.00 L 464.06 7.03 L 517.97 30.47 L 564.84 77.34 L 588.28 121.88 L 597.66 159.38 L 595.31 260.16 L 583.59 297.66 L 571.88 318.75 L 553.12 332.81 L 431.25 384.38" stroke="white" fill="transparent"/>
+	<path d = "M 234.38 405.47 L 232.03 447.66 L 241.41 459.38" stroke="white" fill="transparent"/>
+	<path d = "M 339.84 379.69 L 358.59 442.97" stroke="white" fill="transparent"/>
+	<path d = "M 424.22 367.97 L 442.97 426.56" stroke="white" fill="transparent"/>
+	<path d = "M 285.94 400.78 L 295.31 461.72" stroke="white" fill="transparent"/>
+</svg>

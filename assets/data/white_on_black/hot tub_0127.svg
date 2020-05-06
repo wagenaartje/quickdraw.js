@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with ndjsontosvg (https:https://github.com/thompson318/ndjsontosvg) 
+	from the simplified Google quickdraw data set. key_id = 5369157749047296-->
+<svg width="600" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	xmlns:ndjsontosvg="https://github.com/thompson318/ndjsontosvg"
+	xmlns:quickdraw="https://quickdraw.withgoogle.com/data"
+	xmlns:scikit-surgery="https://doi.org/10.1007/s11548-020-02180-5">
+
+	<rect width="100%" height="100%" fill="black" />
+	<path d = "M 49.22 257.81 L 49.22 290.62 L 67.97 328.12 L 112.50 375.00 L 182.81 414.84 L 264.84 442.97 L 344.53 457.03 L 407.81 461.72 L 461.72 450.00 L 562.50 400.78 L 576.56 379.69 L 583.59 351.56 L 583.59 325.78 L 553.12 271.88 L 508.59 234.38 L 461.72 210.94 L 271.88 182.81 L 150.00 182.81 L 119.53 192.19 L 96.09 206.25 L 44.53 267.19 L 35.16 288.28 L 37.50 314.06" stroke="white" fill="transparent"/>
+	<path d = "M 46.88 269.53 L 63.28 424.22 L 63.28 503.91 L 51.56 543.75 L 70.31 553.12 L 236.72 534.38 L 494.53 534.38 L 543.75 529.69 L 588.28 510.94 L 597.66 496.88 L 595.31 391.41" stroke="white" fill="transparent"/>
+	<path d = "M 100.78 360.94 L 100.78 396.09 L 126.56 513.28" stroke="white" fill="transparent"/>
+	<path d = "M 234.38 403.12 L 232.03 499.22 L 236.72 534.38" stroke="white" fill="transparent"/>
+	<path d = "M 332.81 457.03 L 332.81 555.47" stroke="white" fill="transparent"/>
+	<path d = "M 433.59 473.44 L 447.66 532.03" stroke="white" fill="transparent"/>
+	<path d = "M 529.69 414.84 L 534.38 508.59" stroke="white" fill="transparent"/>
+	<path d = "M 44.53 517.97 L 37.50 494.53 L 2.34 243.75 L 0.00 107.81 L 14.06 58.59 L 28.12 35.16 L 53.91 11.72 L 82.03 0.00 L 128.91 9.38 L 164.06 60.94" stroke="white" fill="transparent"/>
+	<path d = "M 147.66 107.81 L 147.66 145.31" stroke="white" fill="transparent"/>
+	<path d = "M 203.91 103.12 L 217.97 164.06" stroke="white" fill="transparent"/>
+	<path d = "M 246.09 105.47 L 283.59 131.25" stroke="white" fill="transparent"/>
+</svg>

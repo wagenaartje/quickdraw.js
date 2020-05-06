@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with ndjsontosvg (https:https://github.com/thompson318/ndjsontosvg) 
+	from the simplified Google quickdraw data set. key_id = 5856119010361344-->
+<svg width="600" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	xmlns:ndjsontosvg="https://github.com/thompson318/ndjsontosvg"
+	xmlns:quickdraw="https://quickdraw.withgoogle.com/data"
+	xmlns:scikit-surgery="https://doi.org/10.1007/s11548-020-02180-5">
+
+	<rect width="100%" height="100%" fill="white" />
+	<path d = "M 358.59 4.69 L 302.34 0.00 L 250.78 4.69 L 159.38 37.50 L 82.03 89.06 L 39.84 142.97 L 28.12 168.75 L 2.34 255.47 L 0.00 290.62 L 14.06 365.62 L 35.16 419.53 L 77.34 480.47 L 93.75 499.22 L 140.62 527.34 L 208.59 550.78 L 262.50 557.81 L 382.03 541.41 L 489.84 482.81 L 539.06 435.94 L 578.91 384.38 L 597.66 285.94 L 592.97 222.66 L 574.22 166.41 L 550.78 126.56 L 508.59 86.72 L 389.06 16.41" stroke="black" fill="transparent"/>
+	<path d = "M 210.94 107.81 L 232.03 105.47" stroke="black" fill="transparent"/>
+	<path d = "M 339.84 138.28 L 349.22 138.28" stroke="black" fill="transparent"/>
+	<path d = "M 459.38 159.38 L 459.38 159.38" stroke="black" fill="transparent"/>
+	<path d = "M 468.75 274.22 L 464.06 276.56" stroke="black" fill="transparent"/>
+	<path d = "M 292.97 335.16 L 290.62 335.16" stroke="black" fill="transparent"/>
+	<path d = "M 173.44 255.47 L 173.44 253.12" stroke="black" fill="transparent"/>
+	<path d = "M 285.94 194.53 L 290.62 196.88" stroke="black" fill="transparent"/>
+	<path d = "M 375.00 271.88 L 375.00 271.88" stroke="black" fill="transparent"/>
+	<path d = "M 220.31 405.47 L 220.31 405.47" stroke="black" fill="transparent"/>
+	<path d = "M 89.06 253.12 L 89.06 253.12" stroke="black" fill="transparent"/>
+	<path d = "M 175.78 145.31 L 182.81 150.00" stroke="black" fill="transparent"/>
+	<path d = "M 407.81 403.12 L 407.81 403.12" stroke="black" fill="transparent"/>
+	<path d = "M 243.75 435.94 L 243.75 435.94" stroke="black" fill="transparent"/>
+</svg>

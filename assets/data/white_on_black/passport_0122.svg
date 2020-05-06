@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with ndjsontosvg (https:https://github.com/thompson318/ndjsontosvg) 
+	from the simplified Google quickdraw data set. key_id = 5990156169379840-->
+<svg width="600" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	xmlns:ndjsontosvg="https://github.com/thompson318/ndjsontosvg"
+	xmlns:quickdraw="https://quickdraw.withgoogle.com/data"
+	xmlns:scikit-surgery="https://doi.org/10.1007/s11548-020-02180-5">
+
+	<rect width="100%" height="100%" fill="black" />
+	<path d = "M 325.78 11.72 L 75.00 11.72 L 0.00 0.00 L 0.00 28.12 L 23.44 98.44 L 30.47 150.00 L 30.47 375.00 L 2.34 546.09 L 4.69 597.66 L 360.94 581.25 L 370.31 562.50 L 384.38 454.69 L 391.41 229.69 L 403.12 147.66 L 403.12 72.66 L 389.06 11.72 L 375.00 4.69 L 335.16 16.41" stroke="white" fill="transparent"/>
+	<path d = "M 89.06 112.50 L 84.38 178.12" stroke="white" fill="transparent"/>
+	<path d = "M 89.06 105.47 L 114.84 119.53 L 117.19 131.25 L 98.44 135.94" stroke="white" fill="transparent"/>
+	<path d = "M 154.69 159.38 L 164.06 145.31 L 166.41 117.19 L 145.31 164.06" stroke="white" fill="transparent"/>
+	<path d = "M 150.00 147.66 L 140.62 171.09 L 147.66 147.66" stroke="white" fill="transparent"/>
+	<path d = "M 152.34 140.62 L 164.06 147.66 L 164.06 159.38 L 173.44 168.75" stroke="white" fill="transparent"/>
+	<path d = "M 203.91 166.41 L 192.19 164.06 L 185.16 131.25 L 196.88 121.88 L 227.34 121.88" stroke="white" fill="transparent"/>
+	<path d = "M 199.22 147.66 L 210.94 171.09 L 210.94 194.53 L 187.50 199.22" stroke="white" fill="transparent"/>
+	<path d = "M 250.78 199.22 L 276.56 194.53 L 281.25 182.81 L 264.84 145.31 L 283.59 103.12 L 311.72 96.09 L 321.09 105.47" stroke="white" fill="transparent"/>
+	<path d = "M 264.84 300.00 L 201.56 248.44 L 171.09 248.44 L 140.62 274.22 L 121.88 321.09 L 131.25 365.62 L 161.72 419.53 L 180.47 431.25 L 217.97 433.59 L 241.41 407.81 L 260.16 292.97 L 243.75 285.94 L 232.03 290.62" stroke="white" fill="transparent"/>
+</svg>

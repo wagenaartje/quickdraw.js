@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with ndjsontosvg (https:https://github.com/thompson318/ndjsontosvg) 
+	from the simplified Google quickdraw data set. key_id = 5331053319290880-->
+<svg width="600" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	xmlns:ndjsontosvg="https://github.com/thompson318/ndjsontosvg"
+	xmlns:quickdraw="https://quickdraw.withgoogle.com/data"
+	xmlns:scikit-surgery="https://doi.org/10.1007/s11548-020-02180-5">
+
+	<rect width="100%" height="100%" fill="black" />
+	<path d = "M 342.19 51.56 L 335.16 42.19 L 323.44 37.50 L 271.88 56.25 L 225.00 93.75 L 189.84 142.97 L 189.84 175.78 L 206.25 203.91 L 234.38 225.00 L 267.19 232.03 L 332.81 215.62 L 356.25 196.88 L 377.34 159.38 L 379.69 124.22 L 372.66 89.06 L 346.88 60.94 L 318.75 49.22" stroke="white" fill="transparent"/>
+	<path d = "M 217.97 93.75 L 199.22 86.72 L 192.19 60.94 L 194.53 30.47 L 215.62 4.69 L 239.06 0.00 L 253.12 4.69 L 269.53 63.28" stroke="white" fill="transparent"/>
+	<path d = "M 363.28 63.28 L 375.00 37.50 L 410.16 9.38 L 438.28 0.00 L 457.03 11.72 L 454.69 28.12 L 438.28 53.91 L 375.00 114.84" stroke="white" fill="transparent"/>
+	<path d = "M 196.88 192.19 L 161.72 213.28 L 131.25 262.50 L 117.19 318.75 L 124.22 358.59 L 161.72 417.19 L 189.84 440.62 L 248.44 464.06 L 318.75 471.09 L 382.03 457.03 L 433.59 428.91 L 461.72 393.75 L 482.81 342.19 L 489.84 304.69 L 478.12 267.19 L 398.44 182.81" stroke="white" fill="transparent"/>
+	<path d = "M 225.00 386.72 L 229.69 360.94 L 250.78 330.47 L 300.00 304.69 L 370.31 309.38 L 396.09 325.78 L 405.47 344.53 L 398.44 370.31 L 375.00 396.09 L 307.03 414.84 L 253.12 398.44 L 229.69 377.34 L 217.97 353.91" stroke="white" fill="transparent"/>
+	<path d = "M 250.78 342.19 L 307.03 304.69 L 253.12 353.91 L 309.38 318.75 L 257.81 360.94 L 344.53 323.44 L 271.88 391.41 L 377.34 335.16 L 309.38 391.41 L 379.69 344.53 L 316.41 412.50 L 389.06 358.59 L 325.78 412.50" stroke="white" fill="transparent"/>
+	<path d = "M 290.62 53.91 L 281.25 105.47 L 267.19 131.25 L 229.69 157.03 L 187.50 171.09" stroke="white" fill="transparent"/>
+	<path d = "M 267.19 91.41 L 222.66 124.22 L 206.25 142.97 L 260.16 93.75 L 241.41 117.19" stroke="white" fill="transparent"/>
+	<path d = "M 262.50 119.53 L 267.19 107.81 L 257.81 112.50 L 264.84 110.16" stroke="white" fill="transparent"/>
+	<path d = "M 243.75 91.41 L 222.66 114.84 L 203.91 147.66 L 225.00 126.56 L 199.22 157.03 L 208.59 159.38 L 241.41 140.62 L 227.34 161.72 L 246.09 140.62 L 243.75 133.59 L 227.34 131.25 L 225.00 119.53 L 269.53 53.91 L 267.19 46.88 L 260.16 53.91" stroke="white" fill="transparent"/>
+	<path d = "M 351.56 65.62 L 323.44 107.81 L 318.75 152.34 L 332.81 185.16 L 358.59 201.56" stroke="white" fill="transparent"/>
+	<path d = "M 339.84 119.53 L 351.56 119.53 L 344.53 126.56" stroke="white" fill="transparent"/>
+	<path d = "M 353.91 84.38 L 330.47 105.47 L 321.09 128.91 L 323.44 138.28 L 339.84 140.62 L 325.78 171.09 L 330.47 182.81 L 367.97 178.12 L 389.06 117.19 L 384.38 103.12 L 370.31 93.75" stroke="white" fill="transparent"/>
+	<path d = "M 182.81 234.38 L 138.28 278.91 L 196.88 220.31 L 154.69 309.38 L 145.31 346.88 L 152.34 353.91 L 189.84 346.88 L 196.88 405.47 L 206.25 419.53" stroke="white" fill="transparent"/>
+	<path d = "M 117.19 222.66 L 107.81 217.97 L 89.06 220.31 L 39.84 248.44 L 14.06 274.22 L 0.00 316.41 L 14.06 335.16 L 35.16 342.19 L 145.31 330.47" stroke="white" fill="transparent"/>
+	<path d = "M 457.03 225.00 L 543.75 208.59 L 581.25 210.94 L 597.66 222.66 L 583.59 243.75 L 525.00 283.59 L 454.69 311.72" stroke="white" fill="transparent"/>
+	<path d = "M 227.34 426.56 L 194.53 466.41 L 182.81 492.19 L 185.16 506.25 L 220.31 522.66 L 262.50 517.97 L 281.25 496.88 L 283.59 471.09 L 269.53 459.38 L 253.12 468.75" stroke="white" fill="transparent"/>
+	<path d = "M 419.53 407.81 L 384.38 431.25 L 363.28 489.84 L 367.97 506.25 L 382.03 513.28 L 412.50 501.56 L 435.94 480.47 L 445.31 461.72 L 445.31 445.31 L 435.94 433.59 L 417.19 428.91" stroke="white" fill="transparent"/>
+</svg>

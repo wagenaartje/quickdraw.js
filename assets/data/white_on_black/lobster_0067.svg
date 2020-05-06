@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with ndjsontosvg (https:https://github.com/thompson318/ndjsontosvg) 
+	from the simplified Google quickdraw data set. key_id = 6260591599550464-->
+<svg width="600" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	xmlns:ndjsontosvg="https://github.com/thompson318/ndjsontosvg"
+	xmlns:quickdraw="https://quickdraw.withgoogle.com/data"
+	xmlns:scikit-surgery="https://doi.org/10.1007/s11548-020-02180-5">
+
+	<rect width="100%" height="100%" fill="black" />
+	<path d = "M 314.06 159.38 L 339.84 142.97 L 407.81 75.00 L 450.00 49.22 L 536.72 49.22" stroke="white" fill="transparent"/>
+	<path d = "M 332.81 147.66 L 349.22 164.06 L 410.16 164.06 L 517.97 119.53 L 597.66 107.81" stroke="white" fill="transparent"/>
+	<path d = "M 342.19 150.00 L 241.41 124.22 L 89.06 131.25 L 51.56 147.66 L 11.72 180.47 L 0.00 203.91 L 4.69 222.66 L 30.47 234.38 L 112.50 236.72 L 227.34 215.62 L 356.25 159.38" stroke="white" fill="transparent"/>
+	<path d = "M 11.72 201.56 L 14.06 302.34 L 46.88 349.22 L 91.41 377.34 L 110.16 377.34 L 114.84 363.28 L 79.69 344.53 L 56.25 304.69 L 79.69 217.97" stroke="white" fill="transparent"/>
+	<path d = "M 96.09 229.69 L 110.16 257.81 L 103.12 281.25" stroke="white" fill="transparent"/>
+	<path d = "M 147.66 222.66 L 166.41 255.47 L 171.09 281.25" stroke="white" fill="transparent"/>
+	<path d = "M 255.47 229.69 L 257.81 253.12 L 248.44 269.53" stroke="white" fill="transparent"/>
+	<path d = "M 297.66 185.16 L 309.38 213.28 L 309.38 262.50" stroke="white" fill="transparent"/>
+	<path d = "M 318.75 185.16 L 342.19 236.72" stroke="white" fill="transparent"/>
+	<path d = "M 300.00 142.97 L 302.34 145.31" stroke="white" fill="transparent"/>
+	<path d = "M 328.12 173.44 L 382.03 203.91 L 454.69 234.38 L 548.44 239.06 L 564.84 232.03 L 564.84 248.44 L 529.69 276.56 L 447.66 271.88 L 307.03 180.47" stroke="white" fill="transparent"/>
+	<path d = "M 300.00 119.53 L 300.00 93.75 L 335.16 18.75 L 363.28 0.00 L 391.41 2.34 L 393.75 9.38" stroke="white" fill="transparent"/>
+</svg>

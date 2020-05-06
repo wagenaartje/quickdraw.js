@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with ndjsontosvg (https:https://github.com/thompson318/ndjsontosvg) 
+	from the simplified Google quickdraw data set. key_id = 6265964339396608-->
+<svg width="600" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	xmlns:ndjsontosvg="https://github.com/thompson318/ndjsontosvg"
+	xmlns:quickdraw="https://quickdraw.withgoogle.com/data"
+	xmlns:scikit-surgery="https://doi.org/10.1007/s11548-020-02180-5">
+
+	<rect width="100%" height="100%" fill="black" />
+	<path d = "M 42.19 49.22 L 37.50 330.47 L 25.78 412.50 L 14.06 379.69 L 2.34 253.12 L 2.34 112.50 L 35.16 67.97 L 89.06 42.19 L 229.69 4.69 L 358.59 0.00 L 396.09 35.16 L 445.31 110.16 L 510.94 135.94 L 571.88 180.47 L 588.28 208.59 L 597.66 255.47 L 585.94 288.28 L 571.88 307.03 L 525.00 339.84 L 353.91 363.28 L 124.22 365.62 L 30.47 377.34 L 25.78 431.25 L 46.88 482.81 L 72.66 501.56 L 126.56 508.59 L 147.66 503.91 L 168.75 478.12 L 180.47 445.31 L 182.81 384.38 L 171.09 363.28 L 147.66 344.53 L 117.19 337.50 L 60.94 339.84 L 44.53 353.91" stroke="white" fill="transparent"/>
+	<path d = "M 527.34 323.44 L 496.88 321.09 L 478.12 328.12 L 442.97 363.28 L 426.56 391.41 L 412.50 421.88 L 407.81 457.03 L 412.50 485.16 L 431.25 508.59 L 459.38 520.31 L 485.16 517.97 L 510.94 492.19 L 532.03 452.34 L 541.41 405.47 L 539.06 316.41 L 527.34 295.31 L 503.91 288.28 L 489.84 295.31" stroke="white" fill="transparent"/>
+	<path d = "M 124.22 114.84 L 117.19 264.84 L 161.72 253.12 L 182.81 232.03 L 180.47 124.22 L 175.78 112.50 L 161.72 110.16 L 96.09 119.53" stroke="white" fill="transparent"/>
+	<path d = "M 225.00 91.41 L 222.66 248.44 L 241.41 253.12 L 302.34 243.75 L 307.03 229.69 L 283.59 164.06 L 276.56 93.75 L 255.47 91.41 L 203.91 107.81" stroke="white" fill="transparent"/>
+	<path d = "M 321.09 75.00 L 309.38 253.12 L 346.88 255.47 L 405.47 241.41 L 417.19 229.69 L 412.50 187.50 L 375.00 79.69 L 351.56 70.31 L 300.00 70.31 L 288.28 77.34" stroke="white" fill="transparent"/>
+</svg>

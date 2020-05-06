@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with ndjsontosvg (https:https://github.com/thompson318/ndjsontosvg) 
+	from the simplified Google quickdraw data set. key_id = 5796528507584512-->
+<svg width="600" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	xmlns:ndjsontosvg="https://github.com/thompson318/ndjsontosvg"
+	xmlns:quickdraw="https://quickdraw.withgoogle.com/data"
+	xmlns:scikit-surgery="https://doi.org/10.1007/s11548-020-02180-5">
+
+	<rect width="100%" height="100%" fill="white" />
+	<path d = "M 126.56 475.78 L 501.56 459.38 L 520.31 283.59 L 522.66 98.44 L 510.94 86.72 L 461.72 75.00 L 349.22 72.66 L 124.22 110.16 L 89.06 131.25 L 91.41 255.47 L 154.69 499.22" stroke="black" fill="transparent"/>
+	<path d = "M 323.44 206.25 L 267.19 213.28 L 246.09 234.38 L 243.75 281.25 L 269.53 297.66 L 316.41 300.00 L 349.22 276.56 L 365.62 220.31 L 353.91 210.94 L 344.53 213.28" stroke="black" fill="transparent"/>
+	<path d = "M 285.94 302.34 L 292.97 311.72 L 292.97 410.16 L 241.41 480.47" stroke="black" fill="transparent"/>
+	<path d = "M 295.31 412.50 L 351.56 452.34" stroke="black" fill="transparent"/>
+	<path d = "M 307.03 365.62 L 351.56 342.19" stroke="black" fill="transparent"/>
+	<path d = "M 283.59 358.59 L 206.25 365.62" stroke="black" fill="transparent"/>
+	<path d = "M 546.09 107.81 L 583.59 138.28 L 595.31 161.72 L 595.31 203.91 L 567.19 234.38 L 557.81 260.16 L 590.62 292.97 L 595.31 356.25 L 585.94 377.34 L 564.84 386.72 L 560.16 396.09 L 581.25 454.69 L 583.59 482.81 L 567.19 501.56 L 522.66 506.25 L 520.31 553.12 L 487.50 560.16 L 405.47 555.47 L 393.75 560.16 L 375.00 588.28 L 346.88 597.66 L 295.31 597.66 L 260.16 588.28 L 227.34 567.19 L 189.84 581.25 L 131.25 578.91 L 105.47 550.78 L 14.06 506.25 L 2.34 487.50 L 7.03 438.28 L 42.19 426.56 L 7.03 379.69 L 0.00 351.56 L 7.03 323.44 L 37.50 264.84 L 9.38 206.25 L 7.03 133.59 L 18.75 124.22 L 63.28 117.19 L 72.66 79.69 L 96.09 56.25 L 215.62 30.47 L 274.22 7.03 L 445.31 0.00 L 546.09 14.06" stroke="black" fill="transparent"/>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with ndjsontosvg (https:https://github.com/thompson318/ndjsontosvg) 
+	from the simplified Google quickdraw data set. key_id = 6095877003280384-->
+<svg width="600" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	xmlns:ndjsontosvg="https://github.com/thompson318/ndjsontosvg"
+	xmlns:quickdraw="https://quickdraw.withgoogle.com/data"
+	xmlns:scikit-surgery="https://doi.org/10.1007/s11548-020-02180-5">
+
+	<rect width="100%" height="100%" fill="white" />
+	<path d = "M 201.56 161.72 L 192.19 201.56 L 192.19 260.16 L 206.25 288.28 L 248.44 309.38 L 300.00 300.00 L 314.06 285.94 L 323.44 250.78 L 323.44 175.78 L 332.81 175.78 L 344.53 157.03 L 360.94 105.47 L 349.22 35.16 L 325.78 11.72 L 278.91 114.84 L 264.84 128.91 L 248.44 131.25 L 239.06 121.88 L 225.00 70.31 L 222.66 0.00 L 201.56 42.19 L 189.84 84.38 L 189.84 121.88 L 201.56 147.66" stroke="black" fill="transparent"/>
+	<path d = "M 222.66 229.69 L 232.03 225.00 L 267.19 225.00" stroke="black" fill="transparent"/>
+	<path d = "M 229.69 222.66 L 234.38 250.78 L 239.06 222.66 L 246.09 217.97 L 257.81 260.16 L 264.84 264.84 L 274.22 215.62" stroke="black" fill="transparent"/>
+	<path d = "M 330.47 269.53 L 375.00 232.03 L 400.78 171.09 L 414.84 112.50 L 421.88 107.81 L 459.38 131.25 L 489.84 194.53 L 503.91 246.09 L 503.91 311.72 L 482.81 419.53 L 447.66 382.03 L 403.12 360.94 L 382.03 363.28 L 314.06 405.47" stroke="black" fill="transparent"/>
+	<path d = "M 201.56 250.78 L 185.16 234.38 L 161.72 161.72 L 98.44 107.81 L 77.34 110.16 L 58.59 124.22 L 28.12 161.72 L 16.41 189.84 L 2.34 281.25 L 0.00 363.28 L 11.72 328.12 L 30.47 307.03 L 77.34 307.03 L 100.78 356.25 L 124.22 431.25 L 142.97 466.41 L 147.66 515.62 L 164.06 517.97 L 196.88 480.47 L 210.94 473.44 L 232.03 522.66 L 248.44 536.72 L 271.88 539.06 L 283.59 431.25 L 318.75 375.00 L 323.44 372.66" stroke="black" fill="transparent"/>
+	<path d = "M 161.72 503.91 L 142.97 508.59 L 100.78 597.66" stroke="black" fill="transparent"/>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with ndjsontosvg (https:https://github.com/thompson318/ndjsontosvg) 
+	from the simplified Google quickdraw data set. key_id = 6018186073866240-->
+<svg width="600" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	xmlns:ndjsontosvg="https://github.com/thompson318/ndjsontosvg"
+	xmlns:quickdraw="https://quickdraw.withgoogle.com/data"
+	xmlns:scikit-surgery="https://doi.org/10.1007/s11548-020-02180-5">
+
+	<rect width="100%" height="100%" fill="black" />
+	<path d = "M 147.66 86.72 L 133.59 93.75 L 117.19 121.88 L 110.16 175.78 L 117.19 217.97 L 142.97 250.78 L 171.09 267.19 L 206.25 262.50 L 236.72 239.06 L 260.16 203.91 L 271.88 161.72 L 274.22 100.78 L 264.84 84.38 L 243.75 65.62 L 208.59 63.28 L 180.47 72.66 L 124.22 135.94" stroke="white" fill="transparent"/>
+	<path d = "M 119.53 135.94 L 107.81 131.25 L 86.72 105.47 L 77.34 67.97 L 82.03 49.22 L 91.41 28.12 L 103.12 28.12 L 135.94 89.06" stroke="white" fill="transparent"/>
+	<path d = "M 213.28 46.88 L 227.34 42.19 L 260.16 9.38 L 285.94 2.34 L 292.97 28.12 L 276.56 98.44" stroke="white" fill="transparent"/>
+	<path d = "M 187.50 288.28 L 131.25 297.66 L 91.41 328.12 L 56.25 379.69 L 49.22 431.25 L 63.28 466.41 L 89.06 503.91 L 142.97 534.38 L 182.81 543.75 L 227.34 541.41 L 283.59 510.94 L 321.09 447.66 L 328.12 424.22 L 328.12 372.66 L 304.69 311.72 L 241.41 271.88 L 213.28 269.53 L 180.47 281.25" stroke="white" fill="transparent"/>
+	<path d = "M 307.03 496.88 L 309.38 513.28 L 346.88 564.84 L 386.72 571.88 L 405.47 548.44 L 405.47 525.00 L 393.75 499.22 L 377.34 485.16 L 346.88 475.78 L 309.38 485.16" stroke="white" fill="transparent"/>
+	<path d = "M 56.25 485.16 L 28.12 508.59 L 7.03 550.78 L 0.00 578.91 L 18.75 595.31 L 49.22 592.97 L 72.66 578.91 L 89.06 536.72" stroke="white" fill="transparent"/>
+	<path d = "M 302.34 325.78 L 351.56 295.31 L 372.66 297.66 L 384.38 311.72 L 370.31 337.50 L 337.50 363.28 L 297.66 370.31" stroke="white" fill="transparent"/>
+	<path d = "M 89.06 382.03 L 79.69 363.28" stroke="white" fill="transparent"/>
+</svg>

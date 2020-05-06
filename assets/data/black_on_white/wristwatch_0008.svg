@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with ndjsontosvg (https:https://github.com/thompson318/ndjsontosvg) 
+	from the simplified Google quickdraw data set. key_id = 5073423715794944-->
+<svg width="600" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	xmlns:ndjsontosvg="https://github.com/thompson318/ndjsontosvg"
+	xmlns:quickdraw="https://quickdraw.withgoogle.com/data"
+	xmlns:scikit-surgery="https://doi.org/10.1007/s11548-020-02180-5">
+
+	<rect width="100%" height="100%" fill="white" />
+	<path d = "M 292.97 7.03 L 264.84 16.41 L 246.09 39.84 L 241.41 70.31 L 250.78 96.09 L 292.97 124.22 L 363.28 121.88 L 386.72 107.81 L 398.44 91.41 L 398.44 65.62 L 382.03 35.16 L 351.56 11.72 L 323.44 2.34 L 297.66 0.00 L 276.56 14.06" stroke="black" fill="transparent"/>
+	<path d = "M 302.34 14.06 L 288.28 18.75 L 276.56 37.50 L 281.25 63.28 L 295.31 86.72 L 316.41 100.78 L 337.50 103.12 L 358.59 91.41 L 365.62 72.66 L 335.16 37.50 L 307.03 25.78" stroke="black" fill="transparent"/>
+	<path d = "M 297.66 28.12 L 300.00 42.19" stroke="black" fill="transparent"/>
+	<path d = "M 325.78 39.84 L 323.44 44.53" stroke="black" fill="transparent"/>
+	<path d = "M 346.88 70.31 L 335.16 77.34" stroke="black" fill="transparent"/>
+	<path d = "M 344.53 89.06 L 335.16 89.06" stroke="black" fill="transparent"/>
+	<path d = "M 302.34 79.69 L 302.34 75.00" stroke="black" fill="transparent"/>
+	<path d = "M 281.25 56.25 L 283.59 53.91" stroke="black" fill="transparent"/>
+	<path d = "M 316.41 53.91 L 314.06 56.25" stroke="black" fill="transparent"/>
+	<path d = "M 311.72 53.91 L 311.72 39.84" stroke="black" fill="transparent"/>
+	<path d = "M 314.06 51.56 L 356.25 96.09" stroke="black" fill="transparent"/>
+	<path d = "M 330.47 23.44 L 339.84 21.09" stroke="black" fill="transparent"/>
+	<path d = "M 358.59 60.94 L 403.12 46.88" stroke="black" fill="transparent"/>
+	<path d = "M 356.25 103.12 L 365.62 107.81" stroke="black" fill="transparent"/>
+	<path d = "M 297.66 96.09 L 271.88 140.62" stroke="black" fill="transparent"/>
+	<path d = "M 267.19 51.56 L 250.78 60.94" stroke="black" fill="transparent"/>
+	<path d = "M 241.41 60.94 L 187.50 46.88 L 4.69 51.56 L 0.00 56.25 L 2.34 140.62 L 25.78 145.31 L 288.28 119.53" stroke="black" fill="transparent"/>
+	<path d = "M 398.44 42.19 L 464.06 56.25 L 581.25 60.94 L 595.31 72.66 L 597.66 107.81" stroke="black" fill="transparent"/>
+</svg>

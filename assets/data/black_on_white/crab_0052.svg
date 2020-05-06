@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with ndjsontosvg (https:https://github.com/thompson318/ndjsontosvg) 
+	from the simplified Google quickdraw data set. key_id = 5862048850247680-->
+<svg width="600" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	xmlns:ndjsontosvg="https://github.com/thompson318/ndjsontosvg"
+	xmlns:quickdraw="https://quickdraw.withgoogle.com/data"
+	xmlns:scikit-surgery="https://doi.org/10.1007/s11548-020-02180-5">
+
+	<rect width="100%" height="100%" fill="white" />
+	<path d = "M 21.09 246.09 L 56.25 192.19 L 145.31 98.44 L 206.25 56.25 L 236.72 44.53 L 262.50 42.19 L 358.59 86.72 L 349.22 135.94 L 307.03 192.19 L 267.19 220.31 L 229.69 234.38 L 182.81 246.09 L 58.59 257.81" stroke="black" fill="transparent"/>
+	<path d = "M 37.50 253.12 L 16.41 267.19 L 2.34 295.31 L 2.34 356.25 L 11.72 386.72 L 18.75 386.72" stroke="black" fill="transparent"/>
+	<path d = "M 65.62 276.56 L 51.56 323.44 L 49.22 386.72 L 58.59 398.44 L 67.97 393.75" stroke="black" fill="transparent"/>
+	<path d = "M 335.16 65.62 L 384.38 37.50 L 452.34 37.50 L 508.59 56.25 L 597.66 105.47" stroke="black" fill="transparent"/>
+	<path d = "M 358.59 133.59 L 400.78 112.50 L 482.81 107.81 L 506.25 112.50 L 534.38 145.31" stroke="black" fill="transparent"/>
+	<path d = "M 161.72 154.69 L 103.12 77.34 L 77.34 84.38 L 67.97 75.00 L 60.94 39.84 L 79.69 28.12 L 96.09 70.31 L 79.69 75.00" stroke="black" fill="transparent"/>
+	<path d = "M 248.44 112.50 L 182.81 72.66 L 150.00 44.53 L 150.00 23.44 L 154.69 28.12 L 154.69 42.19 L 147.66 35.16 L 140.62 7.03 L 142.97 0.00 L 150.00 4.69 L 159.38 16.41 L 159.38 30.47 L 147.66 44.53 L 131.25 44.53 L 124.22 28.12 L 126.56 2.34 L 133.59 2.34 L 135.94 30.47" stroke="black" fill="transparent"/>
+	<path d = "M 210.94 194.53 L 260.16 196.88 L 274.22 166.41 L 269.53 138.28" stroke="black" fill="transparent"/>
+	<path d = "M 72.66 60.94 L 77.34 58.59 L 79.69 37.50 L 72.66 42.19 L 67.97 65.62 L 75.00 75.00 L 89.06 65.62 L 89.06 58.59 L 79.69 58.59 L 70.31 75.00" stroke="black" fill="transparent"/>
+</svg>

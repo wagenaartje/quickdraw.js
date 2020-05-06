@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with ndjsontosvg (https:https://github.com/thompson318/ndjsontosvg) 
+	from the simplified Google quickdraw data set. key_id = 5836754982535168-->
+<svg width="600" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	xmlns:ndjsontosvg="https://github.com/thompson318/ndjsontosvg"
+	xmlns:quickdraw="https://quickdraw.withgoogle.com/data"
+	xmlns:scikit-surgery="https://doi.org/10.1007/s11548-020-02180-5">
+
+	<rect width="100%" height="100%" fill="white" />
+	<path d = "M 37.50 58.59 L 168.75 32.81 L 398.44 2.34 L 487.50 4.69 L 520.31 21.09 L 536.72 42.19 L 553.12 84.38 L 590.62 274.22 L 597.66 389.06 L 590.62 475.78 L 578.91 492.19 L 562.50 499.22 L 421.88 525.00 L 311.72 529.69 L 138.28 525.00 L 84.38 515.62 L 46.88 475.78 L 25.78 419.53 L 0.00 182.81 L 0.00 147.66 L 9.38 119.53" stroke="black" fill="transparent"/>
+	<path d = "M 75.00 126.56 L 119.53 126.56 L 178.12 114.84 L 248.44 126.56 L 271.88 145.31 L 269.53 171.09 L 239.06 213.28 L 222.66 257.81 L 128.91 269.53 L 105.47 253.12 L 72.66 199.22 L 63.28 168.75 L 70.31 142.97" stroke="black" fill="transparent"/>
+	<path d = "M 452.34 168.75 L 424.22 173.44 L 384.38 196.88 L 375.00 213.28 L 377.34 225.00 L 405.47 227.34 L 414.84 239.06 L 384.38 323.44 L 421.88 342.19 L 459.38 344.53 L 487.50 335.16 L 503.91 321.09 L 513.28 302.34 L 513.28 267.19 L 466.41 164.06" stroke="black" fill="transparent"/>
+	<path d = "M 142.97 461.72 L 140.62 471.09" stroke="black" fill="transparent"/>
+	<path d = "M 140.62 487.50 L 135.94 457.03 L 152.34 412.50 L 192.19 372.66 L 210.94 372.66 L 262.50 419.53 L 339.84 435.94 L 346.88 499.22 L 330.47 532.03" stroke="black" fill="transparent"/>
+	<path d = "M 358.59 16.41 L 375.00 84.38 L 391.41 100.78 L 405.47 103.12 L 487.50 53.91 L 499.22 39.84" stroke="black" fill="transparent"/>
+	<path d = "M 386.72 28.12 L 407.81 25.78 L 435.94 37.50 L 431.25 49.22 L 398.44 65.62 L 426.56 35.16 L 457.03 25.78 L 445.31 46.88 L 405.47 77.34 L 400.78 63.28 L 414.84 35.16 L 442.97 23.44 L 438.28 42.19 L 403.12 82.03 L 384.38 77.34 L 384.38 65.62" stroke="black" fill="transparent"/>
+</svg>
