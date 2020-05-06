@@ -1,41 +1,48 @@
-//var quickDraw = require(['src/quickdraw.js']);
-
-//import { TextButton } from 'gameobjects/textbutton';
-
-class random_image extends Phaser.Scene
+var imageSceneConfig = 
 {
-	constructor()
-	{
-		super({key: 'random_image', active: true});
-	}
-
-	preload()
-	{
-		let names = next_image();
-    		button_names = names[1][0];
-    		right_answer = button_names[0];
-    		button_names = shuffle(button_names);
-    		this.load.svg('pic', names[0]);
-	}
-
-
-
+	key: 'imagescene',
+	active: true,
+	preload: preloadImageScene,
+	create: createImageScene
 }
+
+var buttonSceneConfig = 
+{
+	key: 'buttonscene',
+	active: true,
+	create: createButtonScene
+}
+
+var wellDoneSceneConfig = 
+{
+	key: 'welldonescene',
+	active: false,
+	preload: preloadWellDoneScene,
+	create: createWellDoneScene
+}
+var badLuckSceneConfig = 
+{
+	key: 'badluckscene',
+	active: false,
+	preload: preloadBadLuckScene,
+	create: createBadLuckScene
+}
+
+
 var config = {
     type: Phaser.WEBGL,
     parent: 'phaser-example',
     width: 800,
     height: 600,
-    scene: {
-        create: create,
-	preload: preload,
-    }
+    scene: [ badLuckSceneConfig, wellDoneSceneConfig, imageSceneConfig, buttonSceneConfig ]
 };
+
 
 var game = new Phaser.Game(config);
 var button_names;
 var right_answer;
 var score;
+var scoreText;
 var last_inc;
 var last_but_one_inc;
 var lives;
@@ -43,40 +50,92 @@ var answerButtons;
 var pic;
 var background_image;
 
-function preload ()
+
+function preloadImageScene ()
 {
     let names = next_image();
     button_names = names[1][0];
     right_answer = button_names[0];
     button_names = shuffle(button_names);
-    this.load.svg('pic', names[0]);
+    this.textures.remove('pic_image');
+    this.load.svg('pic_image', names[0]);
 }
 
-function create ()
+function createImageScene ()
+{
+    this.add.image(300, 300, 'pic_image');
+}
+
+function createButtonScene ()
 {
     score = 0;
     last_but_one_inc = 0;
     last_inc = 1;
     lives = 3;
-   
+  
     answerButtons = []
-
-    pic = this.add.image(300, 300, 'pic');
 
     for ( var i = 0 ; i < button_names.length ; i++ ){
 	let button = new TextButton(this, 610, 10 + i * 20, button_names[i], { fill: '#0f0' }, right_answer, on_success, on_fail);
     	answerButtons.push(button);
 	this.add.existing(answerButtons[i]);
     }
+    
+    scoreText = this.add.text(610, 560, 'Score:' + score, { fill: '#0f0' });
+    livesText = this.add.text(610, 580, 'Lives: ' + lives, { fill: '#0f0' });
 
 
+    update_buttons();
 }
 
-function on_success()
+function update_buttons()
 {
+        for ( var i = 0 ; i < button_names.length ; i++ ){
+        	answerButtons[i].setText(button_names[i]);
+	}
+}
+
+
+function preloadWellDoneScene ()
+{
+    this.load.image('picwd', 'assets/backgrounds/iconmonstr-smiley-600.gif');
+}
+function preloadBadLuckScene ()
+{
+    this.load.image('picbl', 'assets/backgrounds/iconmonstr-frown-thin_600.gif');
+}
+
+function createWellDoneScene ()
+{
+    let smiley = this.add.image(300, 300, 'picwd');
+} 
+function createBadLuckScene ()
+{
+    this.add.image(300, 300, 'picbl');
+} 
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+async function on_success()
+{
+	let new_inc = last_inc + last_but_one_inc
+	last_but_one_inc = last_inc
+	last_inc = new_inc
+	score += new_inc
+	scoreText.setText('Score: ' + score);
+
 	console.log("Well done");
-	this.textures.remove('pic');
-	this.load.svg('pic', 'assets/backgrounds/iconmonstr-smiley-2.svg');
+	game.scene.run('welldonescene');
+	game.scene.stop('imagescene');
+	game.scene.remove('imagescene');
+	game.scene.bringToTop('welldonescene');
+	await sleep(1000);
+	game.scene.stop('welldonescene');
+	game.scene.add('imagescene', imageSceneConfig, true);
+
+	update_buttons();
+	
 }
 function on_fail()
 {
