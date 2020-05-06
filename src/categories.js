@@ -60,8 +60,13 @@ const categories = {
 	return cats;
 	},
   /** Pick non-repeating elements in a random fashion */
-  pickRandom: function (amount) {
+  pickRandomCats: function (amount) {
     const array = this._categories();
+    return this.pickRandom ( array, amount );
+  },
+ 
+  /** Pick non-repeating elements in a random fashion */
+  pickRandom: function (array, amount) {
     var picked = [];
     for (var i = array.length - 1; i >= array.length - amount; i--) {
       let j = Math.floor(Math.random() * (i + 1));
@@ -77,5 +82,6 @@ const categories = {
 
     return picked;
   },
+
 
 };

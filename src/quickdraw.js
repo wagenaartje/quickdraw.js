@@ -41,7 +41,7 @@ const quickDraw = {
 
   test: function () {
     console.log('running test');
-    ten_cats = categories.pickRandom(10);
+    ten_cats = categories.pickRandomCats(10);
     console.log(ten_cats);
     return [ten_cats];
   },
