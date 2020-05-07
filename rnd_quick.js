@@ -203,8 +203,18 @@ function shuffle(array) {
 
 function next_image() {
   let [categories] = quickDraw.test();
-  let random_number = Math.floor(Math.random() * 200)
-  let filename = "assets/data/black_on_white/" + categories[0] + "_" + zfill(random_number, 4) + ".svg"
+  let random_number = Math.floor(Math.random() * 200);
+  let prefix = ""
+  if (Math.random() >= 0.5 )
+  {
+	prefix = "assets/data/black_on_white/";
+  }
+  else
+  {	
+        prefix = "assets/data/white_on_black/";
+  }
+
+  let filename = prefix + categories[0] + "_" + zfill(random_number, 4) + ".svg"
   return [filename, [categories]];
 }
 
