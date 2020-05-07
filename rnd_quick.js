@@ -96,7 +96,7 @@ function createImageScene ()
     pic = this.add.image(300, 300, 'pic_image');
 
     var ultrasound_on = false;
-    if (Math.random() >= 0.2 )
+    if ((score > 8) && (Math.random() >= 0.5) )
 	{
 	    console.log("ultrasound on");
 	    ultrasound_on = true;
@@ -119,7 +119,10 @@ function createImageScene ()
 		key: 'speckle',
 		add: true
 	    });
-	    
+	   
+	    spotlight.setScale(3);
+	    probe.setScale(3);
+	    speckle.setScale(3);
 	    if (! this.textures.exists('speckle_cycle'))
 		{
 	    		this.anims.create({
@@ -134,17 +137,25 @@ function createImageScene ()
 	    pic.mask = new Phaser.Display.Masks.BitmapMask(this, spotlight);
 
 	    this.input.on('pointermove', function (pointer) {
-
-		spotlight.x = pointer.x;
+		
+		let x_pos = 550;
+		if ( pointer.x < 550 ){
+			x_pos = pointer.x;
+		}
+		spotlight.x = x_pos;
 		spotlight.y = pointer.y;
-		probe.x = pointer.x;
+		probe.x = x_pos;
 		probe.y = pointer.y;
-		speckle.x = pointer.x;
+		speckle.x = x_pos;
 		speckle.y = pointer.y;
 		speckle.anims.play('speckle_cycle', true)
 
     		});
 
+	}
+	else{
+
+	    console.log("ultrasound off");
 	}
     
 	game.scene.bringToTop('imagescene');
@@ -160,7 +171,7 @@ function createButtonScene ()
     answerButtons = []
 
     for ( var i = 0 ; i < button_names.length ; i++ ){
-	let button = new TextButton(this, 610, 10 + i * 20, button_names[i], { fill: '#0f0' }, checkanswer);
+	let button = new TextButton(this, 610, 10 + i * 40, button_names[i], { fill: '#0f0' }, checkanswer);
     	answerButtons.push(button);
 	this.add.existing(answerButtons[i]);
     }
@@ -243,7 +254,6 @@ async function on_success(this_game)
 	game.scene.add('imagescene', imageSceneConfig, true);
 	game.scene.bringToTop('imagescene');
 	game.scene.stop('welldonescene');
-    	//this.scene.setVisible(false, 'welldonescene');
 
 	update_buttons();
 	
@@ -260,7 +270,7 @@ async function on_fail()
 	game.scene.remove('imagescene');
 	game.scene.bringToTop('badluckscene');
 	whatWasItText.setText('It was a ' + right_answer);
-	await sleep(1000);
+	await sleep(1600);
 
 	if ( lives > 0 )
 	{
