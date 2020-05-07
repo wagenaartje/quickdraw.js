@@ -16,16 +16,32 @@ var buttonSceneConfig =
 var wellDoneSceneConfig = 
 {
 	key: 'welldonescene',
-	active: false,
+	active: true,
 	preload: preloadWellDoneScene,
 	create: createWellDoneScene
 }
 var badLuckSceneConfig = 
 {
 	key: 'badluckscene',
-	active: false,
+	active: true,
 	preload: preloadBadLuckScene,
 	create: createBadLuckScene
+}
+
+var whiteSceneConfig = 
+{
+	key: 'whitescene',
+	active: true,
+	preload: preloadWhiteScene,
+	create: createWhiteScene
+}
+
+var blackSceneConfig = 
+{
+	key: 'blackscene',
+	active: true,
+	preload: preloadBlackScene,
+	create: createBlackScene
 }
 
 
@@ -34,7 +50,7 @@ var config = {
     parent: 'phaser-example',
     width: 800,
     height: 600,
-    scene: [ badLuckSceneConfig, wellDoneSceneConfig, imageSceneConfig, buttonSceneConfig ]
+    scene: [ imageSceneConfig, whiteSceneConfig, blackSceneConfig, buttonSceneConfig, badLuckSceneConfig, wellDoneSceneConfig ]
 };
 
 
@@ -46,6 +62,7 @@ var scoreText;
 var last_inc;
 var last_but_one_inc;
 var lives;
+var livesText;
 var answerButtons;
 var pic;
 var background_image;
@@ -53,8 +70,6 @@ var whatWasItText;
 var spotlight;
 var probe;
 var speckle;
-
-
 
 
 function preloadImageScene ()
@@ -132,6 +147,7 @@ function createImageScene ()
 
 	}
     
+	game.scene.bringToTop('imagescene');
 }
 
 function createButtonScene ()
@@ -164,44 +180,70 @@ function update_buttons()
 }
 
 
+function preloadBlackScene ()
+{
+    this.load.svg('pic_black', 'assets/backgrounds/black.svg');
+}
+function preloadWhiteScene ()
+{
+    this.load.svg('pic_white', 'assets/backgrounds/white.svg');
+}
 function preloadWellDoneScene ()
 {
     this.load.image('picwd', 'assets/backgrounds/iconmonstr-smiley-600.gif');
+    console.log("preloaded well done scene");
 }
 function preloadBadLuckScene ()
 {
     this.load.image('picbl', 'assets/backgrounds/iconmonstr-frown-thin_600.gif');
+    console.log("preloaded bad luck scene");
 }
 
 function createWellDoneScene ()
 {
     let smiley = this.add.image(300, 300, 'picwd');
+    game.scene.sendToBack('welldonescene');
+    console.log("created well done scene");
 } 
+
 function createBadLuckScene ()
 {
     this.add.image(300, 300, 'picbl');
-    whatWasItText = this.add.text(220, 300, '' + right_answer, { fill: '#000' });
+    whatWasItText = this.add.text(220, 300, 'n/a', { fill: '#000' });
+    console.log("created badluckscene");
+    game.scene.sendToBack('badluckscene');
+} 
+
+function createBlackScene ()
+{
+    this.add.image(300, 300, 'pic_black');
+} 
+function createWhiteScene ()
+{
+    let smiley = this.add.image(300, 300, 'pic_white');
 } 
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function on_success()
+async function on_success(this_game)
 {
 	let new_inc = last_inc + last_but_one_inc;
 	last_but_one_inc = last_inc;
 	last_inc = new_inc;
 	score += new_inc;
 	scoreText.setText('Score: ' + score);
-
+ 	
 	game.scene.run('welldonescene');
 	game.scene.bringToTop('welldonescene');
 	game.scene.stop('imagescene');
 	game.scene.remove('imagescene');
 	await sleep(1000);
 	game.scene.add('imagescene', imageSceneConfig, true);
+	game.scene.bringToTop('imagescene');
 	game.scene.stop('welldonescene');
+    	//this.scene.setVisible(false, 'welldonescene');
 
 	update_buttons();
 	
@@ -224,6 +266,7 @@ async function on_fail()
 	{
 		game.scene.stop('badluckscene');
 		game.scene.add('imagescene', imageSceneConfig, true);
+		game.scene.bringToTop('imagescene');
 		update_buttons();
 	}
 	else
@@ -241,7 +284,7 @@ function checkanswer (text)
 	console.log(text + " =? " + right_answer);
 	if ( text == right_answer )
 	{
-		on_success();
+		on_success(this);
 	}
 	else
 	{
@@ -275,10 +318,12 @@ function next_image() {
   if (Math.random() >= 0.5 )
   {
 	prefix = "assets/data/black_on_white/";
+	game.scene.moveAbove('whitescene', 'blackscene');
   }
   else
   {	
         prefix = "assets/data/white_on_black/";
+	game.scene.moveAbove('blackscene', 'whitescene');
   }
 
   let filename = prefix + categories[0] + "_" + zfill(random_number, 4) + ".svg"
