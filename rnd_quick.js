@@ -50,6 +50,11 @@ var answerButtons;
 var pic;
 var background_image;
 var whatWasItText;
+var spotlight;
+var probe;
+var speckle;
+
+
 
 
 function preloadImageScene ()
@@ -58,13 +63,75 @@ function preloadImageScene ()
     button_names = names[1][0];
     right_answer = button_names[0];
     button_names = shuffle(button_names);
-    this.textures.remove('pic_image');
+    if (this.textures.exists('pic_image')){
+        this.textures.remove('pic_image');
+    }
     this.load.svg('pic_image', names[0]);
+    console.log(this.textures.exists('pic_image'), this.textures.exists('mask'))
+    if (! this.textures.exists('mask')){
+        this.load.image('mask', 'assets/sprites/ultrasound_beam.png')
+    	this.load.image('probe', 'assets/sprites/probe.png')
+    	this.load.spritesheet('speckle', 'assets/sprites/speckle.png',
+			{ frameWidth: 80, frameHeight: 101 });
+    }
 }
 
 function createImageScene ()
 {
-    this.add.image(300, 300, 'pic_image');
+    pic = this.add.image(300, 300, 'pic_image');
+
+    var ultrasound_on = false;
+    if (Math.random() >= 0.2 )
+	{
+	    console.log("ultrasound on");
+	    ultrasound_on = true;
+	    var spotlight = this.make.sprite({
+		x: 500,
+		y: 500,
+		key: 'mask',
+		add: false
+	    });
+	    probe = this.make.sprite({
+		x: 500,
+		y: 500,
+		key: 'probe',
+		add: true
+	    });
+
+	    speckle = this.make.sprite({
+		x: 500,
+		y: 500,
+		key: 'speckle',
+		add: true
+	    });
+	    
+	    if (! this.textures.exists('speckle_cycle'))
+		{
+	    		this.anims.create({
+        		key: 'speckle_cycle',
+        		frames: this.anims.generateFrameNumbers('speckle', { start: 0, end: 9 }),
+        		frameRate: 10,
+        		repeat: -1
+			
+            		});
+		}
+
+	    pic.mask = new Phaser.Display.Masks.BitmapMask(this, spotlight);
+
+	    this.input.on('pointermove', function (pointer) {
+
+		spotlight.x = pointer.x;
+		spotlight.y = pointer.y;
+		probe.x = pointer.x;
+		probe.y = pointer.y;
+		speckle.x = pointer.x;
+		speckle.y = pointer.y;
+		speckle.anims.play('speckle_cycle', true)
+
+    		});
+
+	}
+    
 }
 
 function createButtonScene ()
