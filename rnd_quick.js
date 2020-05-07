@@ -16,16 +16,32 @@ var buttonSceneConfig =
 var wellDoneSceneConfig = 
 {
 	key: 'welldonescene',
-	active: false,
+	active: true,
 	preload: preloadWellDoneScene,
 	create: createWellDoneScene
 }
 var badLuckSceneConfig = 
 {
 	key: 'badluckscene',
-	active: false,
+	active: true,
 	preload: preloadBadLuckScene,
 	create: createBadLuckScene
+}
+
+var whiteSceneConfig = 
+{
+	key: 'whitescene',
+	active: true,
+	preload: preloadWhiteScene,
+	create: createWhiteScene
+}
+
+var blackSceneConfig = 
+{
+	key: 'blackscene',
+	active: true,
+	preload: preloadBlackScene,
+	create: createBlackScene
 }
 
 
@@ -34,7 +50,7 @@ var config = {
     parent: 'phaser-example',
     width: 800,
     height: 600,
-    scene: [ badLuckSceneConfig, wellDoneSceneConfig, imageSceneConfig, buttonSceneConfig ]
+    scene: [ imageSceneConfig, whiteSceneConfig, blackSceneConfig, buttonSceneConfig, badLuckSceneConfig, wellDoneSceneConfig ]
 };
 
 
@@ -46,10 +62,14 @@ var scoreText;
 var last_inc;
 var last_but_one_inc;
 var lives;
+var livesText;
 var answerButtons;
 var pic;
 var background_image;
 var whatWasItText;
+var spotlight;
+var probe;
+var speckle;
 
 
 function preloadImageScene ()
@@ -58,13 +78,87 @@ function preloadImageScene ()
     button_names = names[1][0];
     right_answer = button_names[0];
     button_names = shuffle(button_names);
-    this.textures.remove('pic_image');
+    if (this.textures.exists('pic_image')){
+        this.textures.remove('pic_image');
+    }
     this.load.svg('pic_image', names[0]);
+    console.log(this.textures.exists('pic_image'), this.textures.exists('mask'))
+    if (! this.textures.exists('mask')){
+        this.load.image('mask', 'assets/sprites/ultrasound_beam.png')
+    	this.load.image('probe', 'assets/sprites/probe.png')
+    	this.load.spritesheet('speckle', 'assets/sprites/speckle.png',
+			{ frameWidth: 80, frameHeight: 101 });
+    }
 }
 
 function createImageScene ()
 {
-    this.add.image(300, 300, 'pic_image');
+    pic = this.add.image(300, 300, 'pic_image');
+
+    var ultrasound_on = false;
+    if ((score > 8) && (Math.random() >= 0.5) )
+	{
+	    console.log("ultrasound on");
+	    ultrasound_on = true;
+	    var spotlight = this.make.sprite({
+		x: 500,
+		y: 500,
+		key: 'mask',
+		add: false
+	    });
+	    probe = this.make.sprite({
+		x: 500,
+		y: 500,
+		key: 'probe',
+		add: true
+	    });
+
+	    speckle = this.make.sprite({
+		x: 500,
+		y: 500,
+		key: 'speckle',
+		add: true
+	    });
+	   
+	    spotlight.setScale(3);
+	    probe.setScale(3);
+	    speckle.setScale(3);
+	    if (! this.textures.exists('speckle_cycle'))
+		{
+	    		this.anims.create({
+        		key: 'speckle_cycle',
+        		frames: this.anims.generateFrameNumbers('speckle', { start: 0, end: 9 }),
+        		frameRate: 10,
+        		repeat: -1
+			
+            		});
+		}
+
+	    pic.mask = new Phaser.Display.Masks.BitmapMask(this, spotlight);
+
+	    this.input.on('pointermove', function (pointer) {
+		
+		let x_pos = 550;
+		if ( pointer.x < 550 ){
+			x_pos = pointer.x;
+		}
+		spotlight.x = x_pos;
+		spotlight.y = pointer.y;
+		probe.x = x_pos;
+		probe.y = pointer.y;
+		speckle.x = x_pos;
+		speckle.y = pointer.y;
+		speckle.anims.play('speckle_cycle', true)
+
+    		});
+
+	}
+	else{
+
+	    console.log("ultrasound off");
+	}
+    
+	game.scene.bringToTop('imagescene');
 }
 
 function createButtonScene ()
@@ -77,7 +171,7 @@ function createButtonScene ()
     answerButtons = []
 
     for ( var i = 0 ; i < button_names.length ; i++ ){
-	let button = new TextButton(this, 610, 10 + i * 20, button_names[i], { fill: '#0f0' }, checkanswer);
+	let button = new TextButton(this, 610, 10 + i * 40, button_names[i], { fill: '#0f0' }, checkanswer);
     	answerButtons.push(button);
 	this.add.existing(answerButtons[i]);
     }
@@ -97,43 +191,68 @@ function update_buttons()
 }
 
 
+function preloadBlackScene ()
+{
+    this.load.svg('pic_black', 'assets/backgrounds/black.svg');
+}
+function preloadWhiteScene ()
+{
+    this.load.svg('pic_white', 'assets/backgrounds/white.svg');
+}
 function preloadWellDoneScene ()
 {
     this.load.image('picwd', 'assets/backgrounds/iconmonstr-smiley-600.gif');
+    console.log("preloaded well done scene");
 }
 function preloadBadLuckScene ()
 {
     this.load.image('picbl', 'assets/backgrounds/iconmonstr-frown-thin_600.gif');
+    console.log("preloaded bad luck scene");
 }
 
 function createWellDoneScene ()
 {
     let smiley = this.add.image(300, 300, 'picwd');
+    game.scene.sendToBack('welldonescene');
+    console.log("created well done scene");
 } 
+
 function createBadLuckScene ()
 {
     this.add.image(300, 300, 'picbl');
-    whatWasItText = this.add.text(220, 300, '' + right_answer, { fill: '#000' });
+    whatWasItText = this.add.text(220, 300, 'n/a', { fill: '#000' });
+    console.log("created badluckscene");
+    game.scene.sendToBack('badluckscene');
+} 
+
+function createBlackScene ()
+{
+    this.add.image(300, 300, 'pic_black');
+} 
+function createWhiteScene ()
+{
+    let smiley = this.add.image(300, 300, 'pic_white');
 } 
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function on_success()
+async function on_success(this_game)
 {
 	let new_inc = last_inc + last_but_one_inc;
 	last_but_one_inc = last_inc;
 	last_inc = new_inc;
 	score += new_inc;
 	scoreText.setText('Score: ' + score);
-
+ 	
 	game.scene.run('welldonescene');
 	game.scene.bringToTop('welldonescene');
 	game.scene.stop('imagescene');
 	game.scene.remove('imagescene');
 	await sleep(1000);
 	game.scene.add('imagescene', imageSceneConfig, true);
+	game.scene.bringToTop('imagescene');
 	game.scene.stop('welldonescene');
 
 	update_buttons();
@@ -151,12 +270,13 @@ async function on_fail()
 	game.scene.remove('imagescene');
 	game.scene.bringToTop('badluckscene');
 	whatWasItText.setText('It was a ' + right_answer);
-	await sleep(1000);
+	await sleep(1600);
 
 	if ( lives > 0 )
 	{
 		game.scene.stop('badluckscene');
 		game.scene.add('imagescene', imageSceneConfig, true);
+		game.scene.bringToTop('imagescene');
 		update_buttons();
 	}
 	else
@@ -174,7 +294,7 @@ function checkanswer (text)
 	console.log(text + " =? " + right_answer);
 	if ( text == right_answer )
 	{
-		on_success();
+		on_success(this);
 	}
 	else
 	{
@@ -208,10 +328,12 @@ function next_image() {
   if (Math.random() >= 0.5 )
   {
 	prefix = "assets/data/black_on_white/";
+	game.scene.moveAbove('whitescene', 'blackscene');
   }
   else
   {	
         prefix = "assets/data/white_on_black/";
+	game.scene.moveAbove('blackscene', 'whitescene');
   }
 
   let filename = prefix + categories[0] + "_" + zfill(random_number, 4) + ".svg"
