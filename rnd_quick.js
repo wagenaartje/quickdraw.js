@@ -142,12 +142,13 @@ function createImageScene ()
 		if ( pointer.x < 550 ){
 			x_pos = pointer.x;
 		}
+		let y_pos = pointer.y - 110
 		spotlight.x = x_pos;
-		spotlight.y = pointer.y;
+		spotlight.y = y_pos;
 		probe.x = x_pos;
-		probe.y = pointer.y;
+		probe.y = y_pos;
 		speckle.x = x_pos;
-		speckle.y = pointer.y;
+		speckle.y = y_pos;
 		speckle.anims.play('speckle_cycle', true)
 
     		});
