@@ -2,7 +2,7 @@ What Is It ?
 ============
 
 
-.. image:: https://github.com/thompson318/raw/master/what-is-it.png
+.. image:: https://github.com/thompson318/what-is-it/raw/master/what-is-it.png
    :height: 128px
    :target: https://github.com/thompson318/what-is-it
    :alt: Logo
