@@ -1,6 +1,12 @@
 What Is It ?
 ============
 
+
+.. image:: https://github.com/thompson318/raw/master/what-is-it.png
+   :height: 128px
+   :target: https://github.com/thompson318/what-is-it
+   :alt: Logo
+
 Author: Stephen Thompson
 
 This is a browser based game, challenging the player to identify drawings 
@@ -30,4 +36,5 @@ Supported by `Wellcome`_ and `EPSRC`_.
 .. _`Wellcome`: https://wellcome.ac.uk/
 .. _`EPSRC`: https://www.epsrc.ac.uk/
 .. _`here`: https://thompson318.github.io/what-is-it/
+.. _`license file`: https://github.com/thompson318/what-is-it/blob/master/LICENSE
 
