@@ -76,17 +76,18 @@ function preloadImageScene ()
 {
     let names = next_image();
     button_names = names[1][0];
+    button_names[0] = 'art'
     right_answer = button_names[0];
     button_names = shuffle(button_names);
     if (this.textures.exists('pic_image')){
         this.textures.remove('pic_image');
     }
-    this.load.svg('pic_image', names[0]);
+    this.load.image('pic_image', 'assets/data/art_grey_600.jpeg');
     console.log(this.textures.exists('pic_image'), this.textures.exists('mask'))
     if (! this.textures.exists('mask')){
         this.load.image('mask', 'assets/sprites/ultrasound_beam.png')
     	this.load.image('probe', 'assets/sprites/probe.png')
-    	this.load.spritesheet('speckle', 'assets/sprites/speckle.png',
+    	this.load.spritesheet('speckle', 'assets/sprites/strong_speckle.png',
 			{ frameWidth: 80, frameHeight: 101 });
     }
 }
@@ -96,7 +97,7 @@ function createImageScene ()
     pic = this.add.image(300, 300, 'pic_image');
 
     var ultrasound_on = false;
-    if ((score > 8) && (Math.random() >= 0.5) )
+    if (true || (score > 8) && (Math.random() >= 0.5) )
 	{
 	    console.log("ultrasound on");
 	    ultrasound_on = true;
@@ -120,9 +121,9 @@ function createImageScene ()
 		add: true
 	    });
 	   
-	    spotlight.setScale(3);
-	    probe.setScale(3);
-	    speckle.setScale(3);
+	    spotlight.setScale(1.8);
+	    probe.setScale(1.8);
+	    speckle.setScale(1.8);
 	    if (! this.textures.exists('speckle_cycle'))
 		{
 	    		this.anims.create({
