@@ -48,7 +48,7 @@ var blackSceneConfig =
 var config = {
     type: Phaser.WEBGL,
     parent: 'phaser-example',
-    width: 800,
+    width: 810,
     height: 600,
     scene: [ imageSceneConfig, whiteSceneConfig, blackSceneConfig, buttonSceneConfig, badLuckSceneConfig, wellDoneSceneConfig ]
 };
@@ -77,6 +77,8 @@ function preloadImageScene ()
     let names = next_image();
     button_names = names[1][0];
     button_names[0] = 'art'
+    button_names[1] = 'banana stuck on wall'
+    button_names[2] = 'wall stuck on banana'
     right_answer = button_names[0];
     button_names = shuffle(button_names);
     if (this.textures.exists('pic_image')){
@@ -122,7 +124,7 @@ function createImageScene ()
 	    });
 	   
 	    spotlight.setScale(1.8);
-	    probe.setScale(1.8);
+	    probe.setScale(1.6);
 	    speckle.setScale(1.8);
 	    if (! this.textures.exists('speckle_cycle'))
 		{
@@ -147,7 +149,7 @@ function createImageScene ()
 		spotlight.x = x_pos;
 		spotlight.y = y_pos;
 		probe.x = x_pos;
-		probe.y = y_pos;
+		probe.y = y_pos + 45;
 		speckle.x = x_pos;
 		speckle.y = y_pos;
 		speckle.anims.play('speckle_cycle', true)
@@ -271,7 +273,7 @@ async function on_fail()
 	game.scene.stop('imagescene');
 	game.scene.remove('imagescene');
 	game.scene.bringToTop('badluckscene');
-	whatWasItText.setText('It was a ' + right_answer);
+	whatWasItText.setText('It was ' + right_answer);
 	await sleep(1600);
 
 	if ( lives > 0 )
