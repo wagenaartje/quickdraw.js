@@ -48,7 +48,7 @@ var blackSceneConfig =
 var config = {
     type: Phaser.WEBGL,
     parent: 'phaser-example',
-    width: 810,
+    width: 800,
     height: 600,
     scene: [ imageSceneConfig, whiteSceneConfig, blackSceneConfig, buttonSceneConfig, badLuckSceneConfig, wellDoneSceneConfig ]
 };
@@ -76,20 +76,17 @@ function preloadImageScene ()
 {
     let names = next_image();
     button_names = names[1][0];
-    button_names[0] = 'art'
-    button_names[1] = 'banana stuck on wall'
-    button_names[2] = 'wall stuck on banana'
     right_answer = button_names[0];
     button_names = shuffle(button_names);
     if (this.textures.exists('pic_image')){
         this.textures.remove('pic_image');
     }
-    this.load.image('pic_image', 'assets/data/art_grey_600.jpeg');
+    this.load.svg('pic_image', names[0]);
     console.log(this.textures.exists('pic_image'), this.textures.exists('mask'))
     if (! this.textures.exists('mask')){
         this.load.image('mask', 'assets/sprites/ultrasound_beam.png')
     	this.load.image('probe', 'assets/sprites/probe.png')
-    	this.load.spritesheet('speckle', 'assets/sprites/strong_speckle.png',
+    	this.load.spritesheet('speckle', 'assets/sprites/speckle.png',
 			{ frameWidth: 80, frameHeight: 101 });
     }
 }
@@ -99,7 +96,7 @@ function createImageScene ()
     pic = this.add.image(300, 300, 'pic_image');
 
     var ultrasound_on = false;
-    if (true || (score > 8) && (Math.random() >= 0.5) )
+    if ((score > 8) && (Math.random() >= 0.5) )
 	{
 	    console.log("ultrasound on");
 	    ultrasound_on = true;
@@ -123,9 +120,9 @@ function createImageScene ()
 		add: true
 	    });
 	   
-	    spotlight.setScale(1.8);
-	    probe.setScale(1.6);
-	    speckle.setScale(1.8);
+	    spotlight.setScale(3);
+	    probe.setScale(3);
+	    speckle.setScale(3);
 	    if (! this.textures.exists('speckle_cycle'))
 		{
 	    		this.anims.create({
@@ -149,7 +146,7 @@ function createImageScene ()
 		spotlight.x = x_pos;
 		spotlight.y = y_pos;
 		probe.x = x_pos;
-		probe.y = y_pos + 45;
+		probe.y = y_pos;
 		speckle.x = x_pos;
 		speckle.y = y_pos;
 		speckle.anims.play('speckle_cycle', true)
@@ -273,7 +270,7 @@ async function on_fail()
 	game.scene.stop('imagescene');
 	game.scene.remove('imagescene');
 	game.scene.bringToTop('badluckscene');
-	whatWasItText.setText('It was ' + right_answer);
+	whatWasItText.setText('It was a ' + right_answer);
 	await sleep(1600);
 
 	if ( lives > 0 )
